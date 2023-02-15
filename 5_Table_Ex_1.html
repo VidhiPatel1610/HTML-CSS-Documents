@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Complex Table</title>
+    <style>
+        .c{
+            background-color:lightgray;
+        }
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" align="center" cellspacing="3" cellpadding="3">
+        <tr>
+            <td colspan="3" class="c" ><b>Invoice #123456789</b></td>
+            <td class="c"><b>15 February 2023</b></td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>Pay to:</b><br>
+                Acme Billing Co.<br>
+                123 Main St.<br>
+                Cityville ,NA 12345<br>
+            </td>
+            <td colspan="2"><b>Customer:</b><br>
+                John Smith<br>
+                321 Willow Way<br>
+                Southeast Northwestershire,MA 54321<br>
+            </td>
+        </tr>
+        <tr>
+            <td class="c"><b>Name/Description</b></td>
+            <td class="c"><b>Qty.</b></td>
+            <td class="c"><b>@</b></td>
+            <td class="c"><b>Cost</b></td>
+        </tr>
+        <tr>
+            <td>Paperclips</td>
+            <td>1000</td>
+            <td>0.01</td>
+            <td>10.00</td>
+        </tr>
+        <tr>
+            <td>Staples(box)</td>
+            <td>100</td>
+            <td>1.00</td>
+            <td>100.0</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="c"><b>Subtotal</b></td>
+            <td>110.00</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="c"><b>Tax</b></td>
+            <td>8%</td>
+            <td>8.80</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="c"><b>Grand Total</b></td>
+            <td>$118.80</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
