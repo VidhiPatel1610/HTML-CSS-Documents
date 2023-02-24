@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="1">
+    <table border="1" cellspacing="0" align="center" height="200" width="500">
         <tr>
             <th rowspan="3">Day</th>
             <th colspan="3">Seminar</th>
@@ -24,21 +24,29 @@
             <td rowspan="2">Monday</td>
             <td rowspan="2">8:00 a.m</td>
             <td rowspan="2">5:00 p.m</td>
-            <td>Introduction to XML</td>
+            <td style="text-align: center;">Introduction to XML</td>
         </tr>
         <tr>
-            <td>Validity:DTD amd Relax NG</td>
+            <td style="text-align: center;">Validity:DTD amd Relax NG</td>
         </tr>
         <tr>
             <td rowspan="3">Tuesday</td>
             <td>8:00 a.m</td>
             <td>11:00 a.m</td>
-            <td>XPath</td>
+            <td rowspan="3">
+                <table border="1" cellspacing="0" cellpadding="7" style="width: 100%; text-align: center;border: 10px 10px;">
+                    <tr>    
+                        <td>X Path</td>
+                    </tr>
+                    <tr>
+                        <td>XSL Transformation</td>
+                    </tr>
+                </table>
+            </td>
         </tr>
         <tr>
            <td>11:00 a.m</td>
            <td>2:00 p.m</td>
-           <td>XSL Transformations</td>
         </tr>
         <tr>
             <td>2:00 p.m</td>
@@ -48,7 +56,7 @@
             <td>Wednesday</td>
             <td>8:00 a.m</td>
             <td>12:00 p.m</td>
-            <td>XSL Formatting Objects</td>
+            <td style="text-align: center;">XSL Formatting Objects</td>
         </tr>
     </table>
 </body>

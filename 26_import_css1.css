@@ -1,0 +1,11 @@
+/* @import "path/filename.type";
+@import url(path/filename.type); */
+
+@import "26_import_css2.css";
+
+div{
+
+    background:green;
+}
+
+

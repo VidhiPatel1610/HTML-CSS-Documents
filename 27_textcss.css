@@ -1,0 +1,43 @@
+h2{
+    color: coral;
+    background: lightcyan;
+}
+h3{
+    /* text-shadow: x y blur color; */
+    text-shadow: -3px -3px 4px red,3px 3px 4px blue,10px 10px 4px orange;
+    font-size: 40px;
+}
+h4{
+ /* text-shadow: x y blur color; */
+ text-shadow: 0 0 30px blue; 
+ font-size: 50px;  
+}
+
+.b{
+    /* font-weight: bold;
+    font-weight: bolder; */
+    font-weight: 700;
+    font-size: 40px;
+    /* font-weight is 500 up */
+}
+
+.i{
+    font-style: italic;
+    font-style: oblique;
+    font-size: 2rem;
+    /* 1rem=16px */
+}
+
+.u{
+    text-decoration: underline;
+    /* text-decoration: overline;
+    text-decoration: line-through; */
+    font-size: 2rem;
+}
+
+#demo{
+    text-indent: 100px;
+    text-transform: uppercase;
+    /* text-transform: lowercase;
+    text-transform: capitalize; */
+}
