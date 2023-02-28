@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h2::before{
+            content: "Hi";
+        } */
+
+        h2::before{
+            content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe5D0RlBs9FLESv6ZCskvXCidaOuH3JMRtHw&usqp=CAU);
+        }
+        h2::after{
+                content: "How are you?";
+        }
+
+        /* For slect any word or element */
+        ::selection{
+            background: lightgreen;
+            color:white;
+        }
+
+        h1::first-letter{
+            color: magenta;
+        }
+        /* For select only one line for any screen */
+        p::first-line{
+            background: lightgreen;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Vidhi</h2>
+
+    <div>
+        <h1>Heading 1</h1>
+        <h1>Heading 1</h1>
+        <h1>Heading 1</h1>
+        <h1>Heading 1</h1>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corrupti ratione dignissimos illum! Recusandae tenetur officia expedita sequi iure, fugit autem, quaerat, sapiente totam nihil vel quo. Aliquam, odio voluptate.</p>
+</body>
+</html>
