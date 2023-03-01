@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{box-sizing: border-box;margin: 0;padding: 0;}
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         .header{
             height: 100px;
             width: 100%;
@@ -20,6 +25,9 @@
             background: lightblue;
             width: 20%;
             /* float: left; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .header .cname{
             height: 100px;
@@ -55,22 +63,27 @@
             padding: 5px 10px;
         }
         .content{
-            height: 200px;
+            height: 400px;
             background: gray;
-            display: felx;
+            display: flex;
         }
         .content .x1{
             height: 400px;
             width: 25%;
-            border: 2px solid red;
+            border: 2px solid green;
         }
         .content .x1 .h{
-            height: 200px;
-            border: 2px solid;
+            height: 133px;
+            width: 100%;
+            border: 2px solid red;
         }
+
         .footer{
             height:100px;
             background: lightpink;
+            position: sticky;
+            top: 100;
+            bottom: 0;
         }
     </style>
 </head>
@@ -92,13 +105,14 @@
     </div>
     
     <div class="content">
-        <div class="x1"></div>
-        <div class="x1">
-            <div class="h">up</div>
-            <div class="h">down</div>
-        </div>
-        <div class="x1">Part 3</div>
-        <div class="x1">Part 4  </div>
+       <div class="x1">Part 1</div>
+       <div class="x1">
+            <div class="h">UP</div>
+            <div class="h">center</div>
+            <div class="h">Down</div>
+       </div>
+       <div class="x1">Part 3</div>
+       <div class="x1">Part 4</div>
     </div>
     <div class="footer"></div>
 </body>
