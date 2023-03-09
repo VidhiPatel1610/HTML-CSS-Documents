@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            background-color: coral;
+            margin: 0px;
+            padding: 0px;
+        }
+        li{
+            display: inline;
+            margin-right: 50px;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        li::after{
+            content: "";
+            height: 5px;
+            width: 0px;
+            background-color: brown;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: .4s;
+        }
+        li:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a>
+        </li>
+        <li><a href="">Contact</a>
+        </li>
+    </ul>
+</body>
+</html>

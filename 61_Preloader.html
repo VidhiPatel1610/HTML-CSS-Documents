@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            background: linear-gradient(rgb(251, 180, 192),rgb(159, 212, 230));
+            height: 100vh;
+        }
+        .x{
+            height: 200px;
+            width: 200px;
+            /* background: gray; */
+            border-radius: 50%;
+            margin: 200px auto;
+            border: 12px solid transparent;
+            border-top: 12px solid rgb(104, 182, 209);
+            padding: 12px;
+            animation: preloader 1s linear infinite;
+        }
+        .y{
+            height: 150px;
+            width: 150px;
+            /* background: yellow; */
+            border-radius: 50%;
+            border: 12px solid transparent;
+            border-top: 12px solid crimson;
+            padding: 12px;
+            animation: preloader 2s infinite;
+        }
+        .z{
+            height: 100px;
+            width: 100px;
+            /* background:green; */
+            border-radius: 50%;
+            border: 12px solid transparent;
+            border-top: 12px solid rgb(86, 219, 177);
+            padding:12px;
+            animation: preloader 3s infinite;
+        }
+        @keyframes preloader{
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="x">
+        <div class="y">
+            <div class="z"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bbox{
+            border: 20px solid rgba(0,0,0,.23);
+            padding: 35px;
+            background-clip: border-box;
+            background: mediumseagreen;
+            
+        }
+        .pbox{
+            border: 20px solid rgba(0,0,0,.23);
+            padding: 35px;
+            background:mediumaquamarine;
+            background-clip: padding-box;
+        }
+        .cbox{
+            border: 20px solid rgba(0,0,0,.23);
+            padding: 35px;
+            background:mediumaquamarine;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <h2>Background-clip:border-box</h2>  
+    <div class="bbox">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, suscipit odio! Officiis culpa expedita ullam consequuntur, in atque reprehenderit sapiente, magni praesentium voluptas rerum cum, excepturi esse natus laudantium nulla.
+    </div>
+    <h2>Background-clip:Padding-box</h2>  
+    <div class="pbox">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, facilis iusto consequuntur molestias laboriosam possimus id molestiae rem, voluptatibus asperiores nemo sed error blanditiis officia nisi provident. Harum, ducimus perspiciatis.
+    </div>
+    <h2>Background-clip:Content-box</h2>  
+    <div class="cbox">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, harum. Repudiandae libero nihil animi, quaerat et accusamus voluptas sed a necessitatibus placeat repellat assumenda quis commodi eum deleniti, similique possimus!
+    </div>
+</body>
+</html>

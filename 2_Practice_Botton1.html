@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 40px;
+            width: 150px;
+            background:  rgb(27, 167, 167);
+            color: white;
+            font-size: 20px;
+            /* text-align: center;
+            line-height:40px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            word-spacing: 2px;
+            letter-spacing: 2px;
+            margin: 200px auto;
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+            outline: none;
+            border: none;
+            
+        }
+        .effect{
+            border: 2px solid  rgb(27, 167, 167);;
+            /* border-width: 150px; */
+            position: absolute;
+            top:0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        .main:hover .effect{
+            top: 1;
+            right: 1;
+            bottom:1;
+            left: 1;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="main">
+        Shop Now
+        <div class="effect"></div>    
+    </div>
+    
+</body>
+</html>

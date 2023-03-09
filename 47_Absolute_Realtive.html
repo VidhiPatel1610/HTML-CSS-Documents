@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .foreground{
+            height: 300px;
+            width: 300px;
+            background: gray;
+            color: white;
+            font-size: 30px;
+            margin: 50px;
+            position: relative;
+        }
+        .foreground span{
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+        .background{
+            height: 300px;
+            width: 300px;
+            background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE53tTD?ver=8bd9);
+            background-size: 100% 100%;
+            color: white;
+            font-size: 30px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+     <!-- absolute ==> always for CHILD 
+
+    relative ==> always for PARENT  -->
+    <div class="foreground">
+        <span>Vidhi</span>
+        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE53tTD?ver=8bd9" alt="" height="100%" width="100%">
+    </div>
+    <div class="background">
+        Vidhi
+    </div>
+</body>
+</html>

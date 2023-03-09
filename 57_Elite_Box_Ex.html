@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .main
+        {
+            height: 500px;
+            width: 800px;
+            margin: 50px auto;
+            background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg);
+            border: 20px solid rgba(240, 238, 238, 0.2);
+            background-size: 120% 120%;
+            background-origin: border-box;
+            background-position: -50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+            
+        }
+        .main .effect{
+            height: 400px;
+            width: 700px;
+            background: transparent;
+            
+            border: 8px solid white;
+            padding: 300px 0 0 350px;
+            font-size: 30px;
+            color: white;
+            letter-spacing: 10px;
+            font-family: cursive;
+            opacity: 0;
+            margin-left: -90px;
+            transition: 0.5s;
+        }
+        
+        .main:hover{
+            background-position: 0px 0;
+        }
+        .main:hover .effect{
+            opacity: 1;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- Fall Ahead -->
+        <div class="effect">
+            New Arrivals
+        </div>
+    </div>
+</body>
+</html>
