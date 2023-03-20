@@ -1,0 +1,88 @@
+*{box-sizing: border-box;margin: 0;padding: 0;}
+
+.header{
+    height: 30px;
+    background:#7d8035;
+    font-size: 17px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header span{
+    display: inline;
+    padding-left: 950px;   
+}
+.header h4{
+    display: inline;
+    padding-left: 20px;
+}
+.header p{
+    display: inline;
+    padding-left: 10px;
+}
+.nav{
+    height: 80px;
+    background:#8d9047;
+    display: flex;
+}
+.nav .logo{
+    height: 80px;
+    width: 150px;
+    margin-left: 50px;
+}
+.nav .input{
+    height: 80px;
+    width: 400px;
+    margin-left: 30px;
+    position: relative;
+}
+.nav .input .select{
+    height: 40px;
+    width: 400px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+.nav .input .fa-magnifying-glass{
+    position: absolute;
+    top: 30px;
+    left: 390px;
+}
+/* .nav .location{
+    height: 80px;
+    width: 200px;
+    margin-left: 450px;
+    background: red;
+} */
+.header .menu{
+    position: relative;
+}
+.header .menu .items{
+    display: none;
+    position: absolute;
+    top:100%;
+    left:0;
+    background:white;
+    text-decoration: none;
+    height: 150px;
+    width: 250px;
+    color: black;
+    list-style: none;
+}
+.menu:hover .items{
+    display: block;
+}
+
+.data{
+    height: 30px;
+    background:white;
+    box-shadow: 0 0 10px black;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+.data li{
+    display: inline;
+    margin-right: 20px;
+}
+

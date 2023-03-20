@@ -41,17 +41,44 @@
     font-size: 18px;
 }
 .main{
-    height: 435px;
+    height: 400px;
+    width: 100%;
     background: #036da1;
+    display: flex;
+}
+.main .data{
+    height: 450px;
+    width: 40%;
+}
+.main .data .box{
+    height: 300px;
+    width: 65%;
+    margin-top: 140px;
+    margin-left: 100px;
+}
+.main .data .box h1{
+    color: white;
+}
+.main .data .box span{
+    color: rgb(66, 174, 210);
+    font-size: 20px;
+}
+.main .data .box button{
+    height: 50px;
+    width: 100%;
+    background: rgb(26, 185, 26);
+    font-size: 18px;
+    margin-top: 20px;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+.main .data .box img{
+    margin-top: 10px;
 }
 .main .img{
-    padding-left: 470px;
-    object-fit: cover;
+    width: 60%;
 }
-/* .main .data{
-    padding-top: 150px;
-} */
-
 .card
 {
     display: flex;
@@ -73,8 +100,11 @@
     height: 280px; 
 }
 .explore .first .img{
-    padding-top: 25px;
-    padding-left: 120px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
 }
 .explore .first .data h3
 {
