@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    .main{
+        height:200px;
+        width: 200px;
+        margin: 200px auto;
+        /* background: red; */
+        position: relative;
+    }
+    .main .x{
+        height: 200px;
+        width: 200px;
+        background-color: transparent;
+        border: 10px solid transparent;
+        border-top: 10px solid lightcoral;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation:p2 1.5s linear infinite;
+    }
+    .main .y{
+        height: 150px;
+        width: 150px;
+        background-color: transparent;
+        border: 10px solid transparent;
+        border-top: 10px solid lightgreen;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        animation: p1 2s linear infinite;
+    }
+    .main .z{
+        height: 100px;
+        width: 100px;
+        background-color: transparent;
+        border: 10px solid transparent;
+        border-top: 10px solid lightseagreen;
+        border-radius: 50%;
+        position: absolute;
+        top: 60px;
+        left: 50px;
+        animation:p2 2.5s infinite linear;
+    }
+    @keyframes p1{
+        from{transform: rotate(360deg);}
+        to{transform: rotate(0deg);}
+    }
+    @keyframes p2{
+        from{transform: rotate(0deg);}
+        to{transform: rotate(360deg);}
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="x"></div>
+        <div class="y"></div>
+        <div class="z"></div>
+    </div>
+</body>
+</html>

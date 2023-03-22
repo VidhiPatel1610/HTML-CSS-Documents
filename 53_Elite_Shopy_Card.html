@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{box-sizing: border-box;padding: 0;margin: 0;}
         .product-card{
             border: 3px solid red;
             padding: 40px;
@@ -14,19 +15,58 @@
         }
         .card
         {
-            height: 350px;
+            height: 400px;
             width: 250px;
-            background: rgb(222, 128, 128);
+            /* background: rgb(222, 128, 128); */
             box-shadow: 0 0 20px rgb(82, 79, 79);
             margin: 30px;
+            z-index: 1;
             position:relative;
         }
         .card .img
         {
-            height: 250px;
+            height: 300px;
             width: 250px;
             background: rgb(232, 121, 81);
+            position: relative;
         }
+        .card .img .front{
+            height: inherit;
+            width: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateY('180deg');
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        .card .img .back{
+            height: inherit;
+            width: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateY('0deg');
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        .img:hover .front{
+            transform: rotateY('0deg');
+        }
+        .img:hover .back{
+            transform: rotateY('180deg');
+        }
+        .card .img .new{
+            background: #fc636b;
+            color: white;
+            font-size: 18px;
+            display: inline;
+            padding: 3px 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+       
         .card .view{
             height: 50px;
             width: 250px;
@@ -45,10 +85,32 @@
         .card .info{
             height: 100px;
             width: 250px;
-            background-color: rgb(135, 238, 238);
+            background-color: white;
+        }
+        .card .info p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3px;
+            font-weight: bold;
+        }
+        
+        .card .info button{
+            height:30px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 23px;
+            background: #2fdab8;
+            border: none;
+            color: white;
+            font-family: inherit;
+            font-weight: bold;
+            font-size: 16px;
         }
         .img:hover .view{
-            top: 200px;
+            top: 230px;
             opacity: 1;
         }
         .card .view:hover{
@@ -61,71 +123,23 @@
     <!-- Product card start -->
     <div class="card">
         <div class="img">
-            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+            <div class="front">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+            </div>
+            <div class="back">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+            </div>
+            <p class="new">New</p>
             <div class="view">Quick View</div>
         </div>
-        <div class="info"></div>
+        <div class="info">
+            <p style="color:lightcoral">Formal Blue Shirt</p>
+            <p class="x">$45.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strike style="color:lightgray">$69.71</strike> </p>
+            <button>ADD TO CART</button>
+        </div>
     </div>
     <!-- Product card end -->
 
-     <!-- Product card start -->
-     <div class="card">
-        <div class="img">
-            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
-            <div class="view">Quick View</div>
-        </div>
-        <div class="info"></div>
-    </div>
-    <!-- Product card end -->
-
-     <!-- Product card start -->
-     <div class="card">
-        <div class="img">
-            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
-            <div class="view">Quick View</div>
-        </div>
-        <div class="info"></div>
-    </div>
-    <!-- Product card end -->
-
-     <!-- Product card start -->
-     <div class="card">
-        <div class="img">
-            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
-            <div class="view">Quick View</div>
-        </div>
-        <div class="info"></div>
-    </div>
-    <!-- Product card end -->
-
-     <!-- Product card start -->
-     <div class="card">
-        <div class="img">
-            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
-            <div class="view">Quick View</div>
-        </div>
-        <div class="info"></div>
-    </div>
-    <!-- Product card end -->
-
-    <!-- Product card start -->
-    <div class="card">
-        <div class="img">
-            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
-            <div class="view">Quick View</div>
-        </div>
-        <div class="info"></div>
-    </div>
-    <!-- Product card end -->
-    <!-- Product card start -->
-    <div class="card">
-        <div class="img">
-            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
-            <div class="view">Quick View</div>
-        </div>
-        <div class="info"></div>
-    </div>
-    <!-- Product card end -->
 </div>
 </body>
 </html>
