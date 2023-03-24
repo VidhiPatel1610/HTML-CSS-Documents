@@ -5,23 +5,24 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .header{
-    height: 40px;
+    /* height: 40px; */
     display: flex;
+    flex-wrap: wrap;
     font-size: 14px;
-    border-bottom: 2px solid rgb(194, 190, 190);
+    border-bottom: 2px solid rgb(238, 234, 234);
 }
 .header .x1{
     height: 40px;
     width: 80%;
     line-height: 40px;
     padding-left: 100px;
-    border-right: 2px solid rgb(194, 190, 190);
 }
 .header .x2{
     height: 40px;
     width: 7%;
     text-align: center;
     line-height: 40px;
+    border-left: 2px solid rgb(238, 234, 234);
 }
 .header .x2:hover{
     background: #cf2e2e;
@@ -32,28 +33,220 @@
     width: 3%;
     text-align: center;
     line-height: 40px;
-    border-right: 2px solid rgb(194, 190, 190);
+    border-right: 2px solid rgb(238, 234, 234);
 }
 .header .x3:hover{
     color: #cf2e2e;
 }
+
+.img
+{
+    height: 700px;
+    position: relative;
+    background: url(../images/cupcake1.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;   
+}
+.img .waveupper{
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
+.img .wavelower{
+   position: absolute;
+   top: 600px;
+   left: 0;
+}
+.content{
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.content h1{
+    margin: 30px;
+}
+.content p{
+    margin: 10px;
+}
+.content button{
+    height: 40px;
+    width: 230px;
+    background: #cf2e2e;
+    border-radius: 100px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+.content .effect{
+    height: 40px;
+    width: 230px;
+    background: #cf2e2e;
+    border-radius: 100px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.2s;
+    opacity: 0;
+}
+.content .effect .fa-angle-right{
+    margin-left: 120px;
+    margin-top: 10px;
+}
+.content button:hover .effect,.fa-angle-right
+{
+    transform: translateX(10px);
+    opacity: 1;
+}
 .nav{
     height: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    display: flex;
+    padding-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    right: 30px;
+}
+
+.nav li{
+    display: inline;
+    padding:0 20px;
+}
+.nav .list{
+    list-style: none;
     text-align: center;
     line-height: 80px;
-    font-size: 20px;
+    width: 45%;
 }
-.nav li{
-    margin: 20px;
-    display: inline;
-}
-.nav li .blog{
-    margin-left: 50px;
-}
-.nav li a{
+.nav .list a{
     text-decoration: none;
     color: black;
 }
+.nav .fa-cart-shopping{
+    font-size: 30px;
+    padding:0 50px;
+}
+.nav .border{
+    position: relative;
+}
+.nav .effect
+{
+    height: 40px;
+    width: 100px;
+    border-radius: 100px;
+    border: 2px solid #cf2e2e;
+    position: absolute;
+    top: 30px;
+    left: 35px;
+}
+.nav .effect1{
+    height: 40px;
+    width: 120px;
+    border-radius: 100px;
+    border: 2px solid #cf2e2e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.nav .border:hover .effect1{
+    display: block;
+}
+/* .nav .list a:hover{
+    color: #cf2e2e;
+} */
+/* .nav .effect2{
+    height: 40px;
+    width: 140px;
+    border-radius: 100px;
+    border: 2px solid #cf2e2e;
+    position: absolute;
+    top: 30px;
+    left: 280px;
+    display: none;
+}
+.nav .list:hover .effect2{
+    display: block;
+}
+.nav .effect3{
+    height: 40px;
+    width: 100px;
+    border-radius: 100px;
+    border: 2px solid #cf2e2e;
+    position: absolute;
+    top: 30px;
+    left: 435px;
+    display: none;
+}
+.nav .list:hover .effect3{
+    display: block;
+} */
+.nav .logo{
+    width: 10%;
+    text-align: center;
+}
+
 .deal{
+    height: 500px;
+    display: flex;
+    background: lightblue;
+}
+.deal .image{
+    width: 50%;
+    text-align: center;
+    line-height: 500px;
+    margin-top: 50px;
+    margin-left: 100px;
+
+}
+.deal .data{
+    height: 500px;
+    width:50% ;
+    background: lightgreen;
+    text-align: center;
     
+}
+.deal .data h2{
+    padding-top: 50px;
+    font-family: cursive;
+    color: #cf2e2e;
+}
+.deal .data p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+}
+.deal .data .only{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    padding: 10px;
+}
+.deal .data .only span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48px;
+    color: rgba(78, 57, 57, 0.8);
+    padding-left: 5px;
+}
+.deal .data .sold{
+    color:#8d8d8d;
+    font-size: 14px;
+    display: inline;
+}
+
+.deal .data .avaiable{
+    color:#8d8d8d;
+    display: inline;
+    font-size: 14px;
 }
