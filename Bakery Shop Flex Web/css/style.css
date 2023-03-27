@@ -10,6 +10,11 @@
     flex-wrap: wrap;
     font-size: 14px;
     border-bottom: 2px solid rgb(238, 234, 234);
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; */
 }
 .header .x1{
     height: 40px;
@@ -43,9 +48,10 @@
 {
     height: 700px;
     position: relative;
-    background: url(../images/cupcake1.jpg);
+    background: url(../images/slider-21.jpg);
     background-size: 100% 100%;
-    background-attachment: fixed;   
+    background-attachment: fixed;  
+    background-repeat: no-repeat; 
 }
 .img .waveupper{
     position: absolute;
@@ -54,7 +60,7 @@
  }
 .img .wavelower{
    position: absolute;
-   top: 600px;
+   top: 580px;
    left: 0;
 }
 .content{
@@ -119,10 +125,16 @@
     left: 30px;
     right: 30px;
 }
+.sticky{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+}
 
-.nav li{
+.nav .limain{
     display: inline;
-    padding:0 20px;
+    padding:10px 20px;
+    position: relative;
 }
 .nav .list{
     list-style: none;
@@ -132,76 +144,139 @@
 }
 .nav .list a{
     text-decoration: none;
-    color: black;
+    color:#333; 
+}
+.nav .list a:hover{
+    color: #cf2e2e;
+}
+.nav .border{
+    border: 2px solid #cf2e2e;
+    padding: 8px 10px;
+    border-radius: 100px;
+}
+.nav .b1:hover{
+    border: 2px solid #cf2e2e;
+    padding: 8px 15px;
+    border-radius: 100px;
+    margin: 10px;
+}
+.homeul{
+    height: 500px;
+    width: 200px;
+    background: white;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: -50px;
+    display: none;
+}
+.homeul .div1{
+    border-bottom: 2px solid lightgray;
+}
+.homeul .div2{
+    border-bottom: 2px solid lightgray;
+}
+.homeul .subli{
+    list-style: none;
+}
+
+.nav .limain:hover .homeul{
+    display: block;
+}
+.nav .subli:hover{
+    color: #cf2e2e;
+}
+.productul{
+    height: 400px;
+    width: 200px;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: -40px;
+    display: none;
+}
+.productul .productli{
+    list-style: none;
+}
+.nav .limain:hover .productul{
+    display: block;
+}
+.nav .productli:hover{
+    color: #cf2e2e;
+}
+.pagesul{
+    height: 500px;
+    width: 200px;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: -40px;
+    display: none;
+}
+.pagesul .pagesli{
+    list-style: none;
+}
+.nav .limain:hover .pagesul{
+    display: block;
+}
+.nav .pagesli:hover{
+    color: #cf2e2e;
+}
+.blogul{
+    height: 50px;
+    width: 200px;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: -40px;
+    display: none;
+}
+.blogul .blogli{
+    list-style: none;
+}
+.nav .limain:hover .blogul{
+    display: block;
+}
+.nav .blogli:hover{
+    color: #cf2e2e;
+}
+.contactul{
+    height: 150px;
+    width: 200px;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: -40px;
+    display: none;
+}
+.contactul .contactli{
+    list-style: none;
+}
+.nav .limain:hover .contactul{
+    display: block;
+}
+.nav .contactli:hover{
+    color: #cf2e2e;
 }
 .nav .fa-cart-shopping{
     font-size: 30px;
     padding:0 50px;
 }
-.nav .border{
-    position: relative;
-}
-.nav .effect
-{
-    height: 40px;
-    width: 100px;
-    border-radius: 100px;
-    border: 2px solid #cf2e2e;
-    position: absolute;
-    top: 30px;
-    left: 35px;
-}
-.nav .effect1{
-    height: 40px;
-    width: 120px;
-    border-radius: 100px;
-    border: 2px solid #cf2e2e;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-}
-.nav .border:hover .effect1{
-    display: block;
-}
-/* .nav .list a:hover{
-    color: #cf2e2e;
-} */
-/* .nav .effect2{
-    height: 40px;
-    width: 140px;
-    border-radius: 100px;
-    border: 2px solid #cf2e2e;
-    position: absolute;
-    top: 30px;
-    left: 280px;
-    display: none;
-}
-.nav .list:hover .effect2{
-    display: block;
-}
-.nav .effect3{
-    height: 40px;
-    width: 100px;
-    border-radius: 100px;
-    border: 2px solid #cf2e2e;
-    position: absolute;
-    top: 30px;
-    left: 435px;
-    display: none;
-}
-.nav .list:hover .effect3{
-    display: block;
-} */
 .nav .logo{
     width: 10%;
     text-align: center;
+}
+.nav .list .fa-bars{
+    display: none;
+    font-size: 30px;
 }
 
 .deal{
     height: 500px;
     display: flex;
-    background: lightblue;
+    margin-right: 100px;
+    margin-left: 50px;
 }
 .deal .image{
     width: 50%;
@@ -214,9 +289,7 @@
 .deal .data{
     height: 500px;
     width:50% ;
-    background: lightgreen;
     text-align: center;
-    
 }
 .deal .data h2{
     padding-top: 50px;
@@ -239,14 +312,748 @@
     color: rgba(78, 57, 57, 0.8);
     padding-left: 5px;
 }
-.deal .data .sold{
-    color:#8d8d8d;
-    font-size: 14px;
+.deal .data .x1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.deal .data .x{
     display: inline;
+    font-size: 16px;
+    color: #8d8d8d;
+}
+.deal .data .x b{
+    color: black;
+}
+.deal .data .line{
+    height: 20px;
+    width: 430px;
+    background: #cf2e2e;
+    margin-left: 60px;
+    border-radius: 100px;
+}
+.deal .data .num{
+    height: 120px;
+    width: 430px;
+    background: white;
+    margin-left: 60px;
+    display: flex;
+}
+.deal .data .num .part1{
+    height: 120px;
+    width: 130px;
+    margin-right: 20px;
+}
+.deal .data .num .part1 h1{
+    font-size: 55px;
+    margin-bottom: 5px;
+}
+.deal .data .num .part1 span{
+    font-size: 18px;
+}
+.deal .data .num .part3{
+    height: 120px;
+    width: 130px;
+    margin:0 20px;
+}
+.deal .data .num .part3 h1{
+    font-size: 55px;
+    margin-bottom: 5px;
+}
+.deal .data .num .part3 span{
+    font-size: 18px;
+}
+.deal .data .num .part5{
+    height: 120px;
+    width: 130px;
+    margin-left: 20px;
+}
+.deal .data .num .part5 h1{
+    font-size: 55px;
+    margin-bottom: 5px;
+}
+.deal .data .num .part5 span{
+    font-size: 18px;
+}
+.deal .data .num .part2{
+    height: 120px;
+    width: 20px;
+}
+.deal .data .num .part2{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 80px;
+}
+.deal .data .num .part4{
+    height: 120px;
+    width: 20px;
+}
+.deal .data .num .part4{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 80px;
 }
 
-.deal .data .avaiable{
-    color:#8d8d8d;
-    display: inline;
+.data button{
+    height: 40px;
+    width: 230px;
+    background: #cf2e2e;
+    border-radius: 100px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    transition: 1s;
+    position: relative;
+    z-index: 1;
+}
+.data .effect{
+    height: 40px;
+    width: 230px;
+    background: #cf2e2e;
+    border-radius: 100px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+    z-index: -1;
+}
+.data .effect .fa-angle-right{
+    margin-left: 140px;
+    margin-top: 10px;
+}
+.data button:hover i{
+    transform: translateX(20px);
+}
+.data button:hover{
+    box-shadow: 0 0 20px gray;
+}
+
+.sweet{
+    height:600px;
+    padding-top: 50px;
+}
+.sweet h1{
+    color: #cf2e2e;
+    font-family: cursive;
+    text-align: center;
+}
+.sweet div{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.sweet .cards{
+    height: 400px;
+    display: flex;
+    padding:0 100px;
+}
+.sweet .cards .c1{
+    height: 400px;
+    width: 25%;
+}
+.sweet .cards .c1 .img{
+    height: 250px;
+}
+.sweet .cards .c1 .ccake h3{
     font-size: 14px;
+    margin: 15px 0;
+}
+/* .sweet .cards .c1 .ccake h3:hover{
+    color: #cf2e2e;
+} */
+.sweet .cards .c1 .ccake p{
+    font-size: 12px;
+    margin: 15px 0;
+}
+.sweet .cards .c1 .ccake div{
+    font-size: 18px;
+    margin-top: 30px;
+}
+.sweet .cards .c2{
+    height: 400px;
+    width: 25%;
+}
+.sweet .cards .c2 .img{
+    height: 250px;
+}
+.sweet .cards .c2 .ccake h3{
+    font-size: 14px;
+    margin: 15px 0;
+}
+.sweet .cards .c2 .ccake p{
+    font-size: 12px;
+    margin: 15px 0;
+}
+.sweet .cards .c2 .ccake div{
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.sweet .cards .c3{
+    height: 400px;
+    width: 25%;
+
+}
+.sweet .cards .c3 .img{
+    height: 250px;
+}
+.sweet .cards .c3 .ccake h3{
+    font-size: 14px;
+    margin: 15px 0;
+}
+.sweet .cards .c3 .ccake p{
+    font-size: 12px;
+    margin: 15px 0;
+}
+.sweet .cards .c3 .ccake div{
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.sweet .cards .c4{
+    height: 400px;
+    width: 25%;
+
+}
+.sweet .cards .c4 .img{
+    height: 250px;
+}
+.sweet .cards .c4 .ccake h3{
+    font-size: 14px;
+    margin: 15px 0;
+}
+.sweet .cards .c4 .ccake p{
+    font-size: 12px;
+    margin: 15px 0;
+}
+.sweet .cards .c4 .ccake div{
+    font-size: 18px;
+    margin-top: 30px;
+}
+.Dessert{
+    height: 500px;
+}
+.Dessert .backgroud{
+    height: 500px;
+    background: url(../images/Dessertbackground.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.Dessert .backgroud .roundimg{
+    height: 130px;
+    width: 130px;
+    border-radius: 80px;
+    position: absolute;
+    top: 80px;
+    left: 45%;
+    background:url(../images/roundimnage.jpg);
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+    background-size: contain;
+}
+.Dessert .backgroud .ceodata p{
+    font-size: 14px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 250px;
+    left: 520px;
+}
+.Dessert .backgroud .ceodata .div1{
+    font-size: 22px;
+    text-transform: capitalize;
+    line-height: 40px;
+    position: absolute;
+    top: 290px;
+    left: 150px;
+}
+.Dessert .backgroud .ceodata .div2{
+    font-size: 22px;
+    text-transform: capitalize;
+    line-height: 40px;
+    position: absolute;
+    top: 340px;
+    left: 180px;
+}
+.happy{
+    height: 200px;
+    padding-top: 80px;
+}
+.happy h1{
+    color: #cf2e2e;
+    font-family: cursive;
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.happy div{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.happyimg{
+    height: 550px;
+    width: 100%;
+    display: flex;
+}
+.happyimg .happyimg1{
+    height: 500px;
+    width: 50%;
+    margin: 20px;
+    padding-left: 100px;
+}
+.happyimg .happyimg2{
+    height: 500px;
+    width: 50%;
+}
+.happyimg .happyimg2 .part1{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    padding-right: 100px;
+}
+.happyimg .happyimg2 .part1 .p1{
+    height: 100%;
+    width: 50%;
+    margin-right: 10px;
+}
+.happyimg .happyimg2 .part1 .p2{
+    height: 100%;
+    width: 50%;
+    margin-left: 20px;
+}
+.happyimg .happyimg2 .part2{
+    height: 50%;
+    width: 100%;
+    margin: 20px;
+    padding-right: 120px;
+}
+.hotcake{
+    height: 100px;
+    width: 100%;
+}
+.hotcake .h11{
+    height: 100px;
+    display: inline;
+    margin-left: 120px;
+}
+.hotcake .h12{
+    height: 100px;
+    display: inline;
+    margin-left: 400px;
+}
+.cupcakecards{
+    height: 600px;
+    display:flex;
+    padding: 0 100px;
+}
+.cupcakecards .part1{
+    height: 600px;
+    width: 50%;
+}
+.cupcakecards .part1 .p1{
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+.cupcakecards .part1 .p1 .img{
+    height: 200px;
+    width: 30%;
+}
+.cupcakecards .part1 .p1 .data{
+    height: 200px;
+    width: 70%;
+    padding: 0 20px;
+}
+.cupcakecards .part1 .p1 .data h3{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.cupcakecards .part1 .p1 .data p{
+    text-transform: capitalize;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.cupcakecards .part1 .p1 .data div{
+    font-size: 18px;
+}
+.cupcakecards .part1 .p1 .data button{
+    height: 40px;
+    width: 150px;
+    background: #ee7560;
+    border-radius: 100px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    transition: 1s;
+    position: relative;
+    z-index: 1;
+}
+.cupcakecards .part1 .p1 .data .effect{
+    height: 40px;
+    width: 180px;
+    background: #ee7560;
+    border-radius: 100px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+    z-index: -1;
+}
+.cupcakecards .part1 .p1 .data .effect .fa-angle-right{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.cupcakecards .part1 .p1 .data button:hover i{
+    transform: translateX(20px);
+}
+.cupcakecards .part1 .p1 .data button:hover{
+    box-shadow: 0 0 20px gray;
+}
+.cupcakecards .part1 .p2{
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+.cupcakecards .part1 .p2 .img{
+    height: 200px;
+    width: 30%;
+}
+.cupcakecards .part1 .p2 .data{
+    height: 200px;
+    width: 70%;
+    padding: 0 20px;
+}
+.cupcakecards .part1 .p2 .data h3{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.cupcakecards .part1 .p2 .data p{
+    text-transform: capitalize;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.cupcakecards .part1 .p2 .data div{
+    font-size: 18px;
+}
+.cupcakecards .part1 .p2 .data button{
+    height: 40px;
+    width: 150px;
+    background: #ee7560;
+    border-radius: 100px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    transition: 1s;
+    position: relative;
+    z-index: 1;
+}
+.cupcakecards .part1 .p2 .data .effect{
+    height: 40px;
+    width: 180px;
+    background: #ee7560;
+    border-radius: 100px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+    z-index: -1;
+}
+.cupcakecards .part1 .p2 .data .effect .fa-angle-right{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.cupcakecards .part1 .p2 .data button:hover i{
+    transform: translateX(20px);
+}
+.cupcakecards .part1 .p2 .data button:hover{
+    box-shadow: 0 0 20px gray;
+}
+.cupcakecards .part1 .p3{
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+.cupcakecards .part1 .p3 .img{
+    height: 200px;
+    width: 30%;
+}
+.cupcakecards .part1 .p3 .data{
+    height: 200px;
+    width: 70%;
+    padding: 0 20px;
+}
+.cupcakecards .part1 .p3 .data h3{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.cupcakecards .part1 .p3 .data p{
+    text-transform: capitalize;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.cupcakecards .part1 .p3 .data div{
+    font-size: 18px;
+}
+.cupcakecards .part1 .p3 .data button{
+    height: 40px;
+    width: 150px;
+    background: #ee7560;
+    border-radius: 100px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    transition: 1s;
+    position: relative;
+    z-index: 1;
+}
+.cupcakecards .part1 .p3 .data .effect{
+    height: 40px;
+    width: 180px;
+    background: #ee7560;
+    border-radius: 100px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+    z-index: -1;
+}
+.cupcakecards .part1 .p3 .data .effect .fa-angle-right{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.cupcakecards .part1 .p3 .data button:hover i{
+    transform: translateX(20px);
+}
+.cupcakecards .part1 .p3 .data button:hover{
+    box-shadow: 0 0 20px gray;
+}
+
+
+
+
+.cupcakecards .part2{
+    height: 600px;
+    width: 50%;
+}
+.cupcakecards .part2 .p1{
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+.cupcakecards .part2 .p1 .img{
+    height: 200px;
+    width: 30%;
+}
+.cupcakecards .part2 .p1 .data{
+    height: 200px;
+    width: 70%;
+    padding: 0 20px;
+}
+.cupcakecards .part2 .p1 .data h3{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.cupcakecards .part2 .p1 .data p{
+    text-transform: capitalize;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.cupcakecards .part2 .p1 .data div{
+    font-size: 18px;
+}
+.cupcakecards .part2 .p1 .data button{
+    height: 40px;
+    width: 150px;
+    background: #ee7560;
+    border-radius: 100px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    transition: 1s;
+    position: relative;
+    z-index: 1;
+}
+.cupcakecards .part2 .p1 .data .effect{
+    height: 40px;
+    width: 180px;
+    background: #ee7560;
+    border-radius: 100px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+    z-index: -1;
+}
+.cupcakecards .part2 .p1 .data .effect .fa-angle-right{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.cupcakecards .part2 .p1 .data button:hover i{
+    transform: translateX(20px);
+}
+.cupcakecards .part2 .p1 .data button:hover{
+    box-shadow: 0 0 20px gray;
+}
+.cupcakecards .part2 .p2{
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+.cupcakecards .part2 .p2 .img{
+    height: 200px;
+    width: 30%;
+}
+.cupcakecards .part2 .p2 .data{
+    height: 200px;
+    width: 70%;
+    padding: 0 20px;
+}
+.cupcakecards .part2 .p2 .data h3{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.cupcakecards .part2 .p2 .data p{
+    text-transform: capitalize;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.cupcakecards .part2 .p2 .data div{
+    font-size: 18px;
+}
+.cupcakecards .part2 .p2 .data button{
+    height: 40px;
+    width: 150px;
+    background: #ee7560;
+    border-radius: 100px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    transition: 1s;
+    position: relative;
+    z-index: 1;
+}
+.cupcakecards .part2 .p2 .data .effect{
+    height: 40px;
+    width: 180px;
+    background: #ee7560;
+    border-radius: 100px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+    z-index: -1;
+}
+.cupcakecards .part2 .p2 .data .effect .fa-angle-right{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.cupcakecards .part2 .p2 .data button:hover i{
+    transform: translateX(20px);
+}
+.cupcakecards .part2 .p2 .data button:hover{
+    box-shadow: 0 0 20px gray;
+}
+.cupcakecards .part2 .p3{
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+.cupcakecards .part2 .p3 .img{
+    height: 200px;
+    width: 30%;
+}
+.cupcakecards .part2 .p3 .data{
+    height: 200px;
+    width: 70%;
+    padding: 0 20px;
+}
+.cupcakecards .part2 .p3 .data h3{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.cupcakecards .part2 .p3 .data p{
+    text-transform: capitalize;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.cupcakecards .part2 .p3 .data div{
+    font-size: 18px;
+}
+.cupcakecards .part2 .p3 .data button{
+    height: 40px;
+    width: 150px;
+    background: #ee7560;
+    border-radius: 100px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    transition: 1s;
+    position: relative;
+    z-index: 1;
+}
+.cupcakecards .part2 .p3 .data .effect{
+    height: 40px;
+    width: 180px;
+    background: #ee7560;
+    border-radius: 100px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+    z-index: -1;
+}
+.cupcakecards .part2 .p3 .data .effect .fa-angle-right{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.cupcakecards .part2 .p3 .data button:hover i{
+    transform: translateX(20px);
+}
+.cupcakecards .part2 .p3 .data button:hover{
+    box-shadow: 0 0 20px gray;
 }
