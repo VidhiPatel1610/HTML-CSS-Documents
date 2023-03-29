@@ -43,17 +43,28 @@
 .header .x3:hover{
     color: #cf2e2e;
 }
-
 .img
 {
-    height: 700px;
-    position: relative;
+    height: 600px;
     background: url(../images/slider-21.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;  
-    background-repeat: no-repeat; 
+    position: relative;
 }
-.img .waveupper{
+.img .down{
+    background: url(../images/down.png);
+    height: 80px;
+    width: 100%;
+}
+.img .up{
+    background: url(../images/up.png);
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    left: 0;
+}
+/* .img .waveupper{
     position: absolute;
     top: 0;
     left: 0;
@@ -62,7 +73,7 @@
    position: absolute;
    top: 580px;
    left: 0;
-}
+} */
 .content{
     height: 250px;
     width: 100%;
@@ -119,16 +130,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     display: flex;
-    padding-top: 10px;
     position: absolute;
     top: 0;
     left: 30px;
     right: 30px;
-}
-.sticky{
-    position: sticky;
-    top: 0;
-    bottom: 0;
 }
 
 .nav .limain{
@@ -284,10 +289,8 @@
     line-height: 500px;
     margin-top: 50px;
     margin-left: 100px;
-
 }
 .deal .data{
-    height: 500px;
     width:50% ;
     text-align: center;
 }
@@ -449,9 +452,10 @@
     letter-spacing: 2px;
 }
 .sweet .cards{
-    height: 400px;
     display: flex;
+    flex-wrap: wrap;
     padding:0 100px;
+    margin-top: 50px;
 }
 .sweet .cards .c1{
     height: 400px;
@@ -481,6 +485,7 @@
 }
 .sweet .cards .c2 .img{
     height: 250px;
+    position: relative;
 }
 .sweet .cards .c2 .ccake h3{
     font-size: 14px;
@@ -494,7 +499,20 @@
     font-size: 18px;
     margin-top: 30px;
 }
-
+.sweet .cards .c2 .img .sale .badge img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sweet .cards .c2 .img .sale .badge .text p{
+    font-size: 16px;
+    font-weight: bold;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    color: white;
+}
 .sweet .cards .c3{
     height: 400px;
     width: 25%;
@@ -502,6 +520,7 @@
 }
 .sweet .cards .c3 .img{
     height: 250px;
+    position: relative;
 }
 .sweet .cards .c3 .ccake h3{
     font-size: 14px;
@@ -515,7 +534,20 @@
     font-size: 18px;
     margin-top: 30px;
 }
-
+.sweet .cards .c3 .img .sale .badge img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sweet .cards .c3 .img .sale .badge .text p{
+    font-size: 16px;
+    font-weight: bold;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    color: white;
+}
 .sweet .cards .c4{
     height: 400px;
     width: 25%;
@@ -523,6 +555,7 @@
 }
 .sweet .cards .c4 .img{
     height: 250px;
+    position: relative;
 }
 .sweet .cards .c4 .ccake h3{
     font-size: 14px;
@@ -536,8 +569,23 @@
     font-size: 18px;
     margin-top: 30px;
 }
+.sweet .cards .c4 .img .sale .badge img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sweet .cards .c4 .img .sale .badge .text p{
+    font-size: 16px;
+    font-weight: bold;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    color: white;
+}
 .Dessert{
     height: 500px;
+    margin-top: 100px;
 }
 .Dessert .backgroud{
     height: 500px;
@@ -604,56 +652,79 @@
     display: flex;
 }
 .happyimg .happyimg1{
-    height: 500px;
+    height: 550px;
     width: 50%;
-    margin: 20px;
-    padding-left: 100px;
+    margin-left: 100px;
+    padding: 15px;
+    
+}
+.happyimg .happyimg1:hover img{
+    opacity: 0.8;
+    transition:0.6s;
 }
 .happyimg .happyimg2{
-    height: 500px;
+    height: 550px;
     width: 50%;
+    padding-right: 100px;
 }
 .happyimg .happyimg2 .part1{
     height: 50%;
     width: 100%;
     display: flex;
-    padding: 20px;
-    padding-right: 100px;
 }
 .happyimg .happyimg2 .part1 .p1{
     height: 100%;
     width: 50%;
-    margin-right: 10px;
+    padding: 15px;
+}
+.happyimg .happyimg2 .part1 .p1:hover img{
+    opacity: 0.8;
+    transition:0.6s;
 }
 .happyimg .happyimg2 .part1 .p2{
     height: 100%;
     width: 50%;
-    margin-left: 20px;
+    padding: 15px;
+}
+.happyimg .happyimg2 .part1 .p2:hover img{
+    opacity: 0.8;
+    transition:0.6s;
 }
 .happyimg .happyimg2 .part2{
     height: 50%;
     width: 100%;
-    margin: 20px;
-    padding-right: 120px;
+    padding: 15px;
+}
+.happyimg .happyimg2 .part2:hover img{
+    opacity: 0.8;
+    transition:0.6s;
 }
 .hotcake{
     height: 100px;
     width: 100%;
+    display: flex;
+    line-height: 100px;
+    margin-top: 30px;
 }
 .hotcake .h11{
     height: 100px;
+    width: 50%;
     display: inline;
-    margin-left: 120px;
+    text-align: left;
+    padding-left: 110px;
 }
 .hotcake .h12{
     height: 100px;
+    width: 50%;
     display: inline;
-    margin-left: 400px;
+    text-align: left;
+    padding-left: 60px;
 }
 .cupcakecards{
     height: 600px;
     display:flex;
     padding: 0 100px;
+    margin-top: 40px;
 }
 .cupcakecards .part1{
     height: 600px;
@@ -664,9 +735,11 @@
     width: 100%;
     display: flex;
 }
-.cupcakecards .part1 .p1 .img{
+.cupcakecards .part1 .p1 .ccake{
     height: 200px;
     width: 30%;
+    padding-bottom: 50px;
+    padding-left: 20px;
 }
 .cupcakecards .part1 .p1 .data{
     height: 200px;
@@ -678,10 +751,14 @@
     font-weight: normal;
     margin-bottom: 10px;
 }
+.cupcakecards .part1 .p1 .data h3:hover{
+    color: #cf2e2e;
+}
 .cupcakecards .part1 .p1 .data p{
     text-transform: capitalize;
     line-height: 25px;
     margin-bottom: 20px;
+    font-size: 14px;
 }
 .cupcakecards .part1 .p1 .data div{
     font-size: 18px;
@@ -729,9 +806,11 @@
     width: 100%;
     display: flex;
 }
-.cupcakecards .part1 .p2 .img{
+.cupcakecards .part1 .p2 .ccake{
     height: 200px;
     width: 30%;
+    padding-bottom: 50px;
+    padding-left: 20px;
 }
 .cupcakecards .part1 .p2 .data{
     height: 200px;
@@ -743,10 +822,17 @@
     font-weight: normal;
     margin-bottom: 10px;
 }
+.cupcakecards .part1 .p2 .data h3:hover{
+    color: #cf2e2e;
+}
+.cupcakecards .part1 .p2 .data h3:hover{
+    color: #cf2e2e;
+}
 .cupcakecards .part1 .p2 .data p{
     text-transform: capitalize;
     line-height: 25px;
     margin-bottom: 20px;
+    font-size: 14px;
 }
 .cupcakecards .part1 .p2 .data div{
     font-size: 18px;
@@ -794,9 +880,11 @@
     width: 100%;
     display: flex;
 }
-.cupcakecards .part1 .p3 .img{
+.cupcakecards .part1 .p3 .ccake{
     height: 200px;
     width: 30%;
+    padding-bottom: 50px;
+    padding-left: 20px;
 }
 .cupcakecards .part1 .p3 .data{
     height: 200px;
@@ -808,10 +896,14 @@
     font-weight: normal;
     margin-bottom: 10px;
 }
+.cupcakecards .part1 .p3 .data h3:hover{
+    color: #cf2e2e;
+}
 .cupcakecards .part1 .p3 .data p{
     text-transform: capitalize;
     line-height: 25px;
     margin-bottom: 20px;
+    font-size: 14px;
 }
 .cupcakecards .part1 .p3 .data div{
     font-size: 18px;
@@ -856,8 +948,6 @@
 }
 
 
-
-
 .cupcakecards .part2{
     height: 600px;
     width: 50%;
@@ -867,9 +957,11 @@
     width: 100%;
     display: flex;
 }
-.cupcakecards .part2 .p1 .img{
+.cupcakecards .part2 .p1 .ccake{
     height: 200px;
     width: 30%;
+    padding-bottom: 50px;
+    padding-left: 20px;
 }
 .cupcakecards .part2 .p1 .data{
     height: 200px;
@@ -881,10 +973,14 @@
     font-weight: normal;
     margin-bottom: 10px;
 }
+.cupcakecards .part2 .p1 .data h3:hover{
+    color: #cf2e2e;
+}
 .cupcakecards .part2 .p1 .data p{
     text-transform: capitalize;
     line-height: 25px;
     margin-bottom: 20px;
+    font-size: 14px;
 }
 .cupcakecards .part2 .p1 .data div{
     font-size: 18px;
@@ -932,9 +1028,12 @@
     width: 100%;
     display: flex;
 }
-.cupcakecards .part2 .p2 .img{
+.cupcakecards .part2 .p2 .ccake
+{
     height: 200px;
     width: 30%;
+    padding-bottom: 50px;
+    padding-left: 20px;
 }
 .cupcakecards .part2 .p2 .data{
     height: 200px;
@@ -946,10 +1045,14 @@
     font-weight: normal;
     margin-bottom: 10px;
 }
+.cupcakecards .part2 .p2 .data h3:hover{
+    color: #cf2e2e;
+}
 .cupcakecards .part2 .p2 .data p{
     text-transform: capitalize;
     line-height: 25px;
     margin-bottom: 20px;
+    font-size: 14px;
 }
 .cupcakecards .part2 .p2 .data div{
     font-size: 18px;
@@ -997,9 +1100,11 @@
     width: 100%;
     display: flex;
 }
-.cupcakecards .part2 .p3 .img{
+.cupcakecards .part2 .p3 .ccake{
     height: 200px;
     width: 30%;
+    padding-bottom: 50px;
+    padding-left: 20px;
 }
 .cupcakecards .part2 .p3 .data{
     height: 200px;
@@ -1011,10 +1116,14 @@
     font-weight: normal;
     margin-bottom: 10px;
 }
+.cupcakecards .part2 .p3 .data h3:hover{
+    color: #cf2e2e;
+}
 .cupcakecards .part2 .p3 .data p{
     text-transform: capitalize;
     line-height: 25px;
     margin-bottom: 20px;
+    font-size: 14px;
 }
 .cupcakecards .part2 .p3 .data div{
     font-size: 18px;
@@ -1056,4 +1165,188 @@
 }
 .cupcakecards .part2 .p3 .data button:hover{
     box-shadow: 0 0 20px gray;
+}
+.extra{
+    height: 100px;
+    background: lightblue;
+}
+.baker{
+    height: 650px;
+    width: 100%;
+    background: rgb(232, 230, 230);
+    margin-top: 100px;
+    display: flex;
+}
+.baker .ourbaker{
+    height: 650px;
+    width: 40%;
+    padding-left: 100px;
+    padding-top: 80px;
+}
+.baker .ourbaker h1{
+    font-family: serif;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+.baker .ourbaker .bakerp1{
+    font-size: 15px;
+}
+.baker .ourbaker .bakerp11{
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.baker .ourbaker .bakerp2{
+    font-size: 15px;
+}
+.baker .ourbaker .bakerp3{
+    font-size: 15px;
+}
+.baker .ourbaker .bakerp4{
+    font-size: 15px;
+}
+.baker .ourbaker .bakerp5{
+    font-size: 15px;
+}
+.baker .ourbaker .bakerp6{
+    font-size: 15px;
+    list-style: circle;
+    margin: 30px 0;
+}
+.baker .ourbaker .bakerp7{
+    font-size: 15px;
+    list-style: circle;
+    margin: 30px 0;
+}
+.baker .ourbaker .bakerp8{
+    font-size: 15px;
+    list-style: circle;
+    margin: 30px 0;
+}
+.baker .ourbaker button{
+    height: 40px;
+    width: 150px;
+    background: #ee7560;
+    border-radius: 100px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    transition: 1s;
+    position: relative;
+    z-index: 1;
+}
+.baker .ourbaker .effect{
+    height: 40px;
+    width: 180px;
+    background: #ee7560;
+    border-radius: 100px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+    z-index: -1;
+}
+.baker .ourbaker .effect .fa-angle-right{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.baker .ourbaker button:hover i{
+    transform: translateX(20px);
+}
+.baker .ourbaker button:hover{
+    box-shadow: 0 0 20px gray;
+}
+.baker .bakercards{
+    height: 650px;
+    width: 60%;
+    padding-right: 100px;
+    padding-top: 80px;
+    display: flex;
+}
+.baker .bakercards .bc1{
+    height: 500px;
+    width: 350px;
+    background: white ;
+    margin-right: 30px;
+}
+.baker .bakercards .bc1 .bakerimage{
+    height: 270px;
+    width: 350px;
+    transition: 2s;
+}
+.baker .bakercards .bc1 .bakerimage:hover{
+    transform: scale(1);
+}
+.baker .bakercards .bc1 .bakercontent{
+    height: 230px;
+    width: 350px;
+    padding: 0 15px;
+    padding-top: 30px;
+    text-align: center;
+}
+.baker .bakercards .bc1 .bakercontent h3{
+    font-family: serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.baker .bakercards .bc1 .bakercontent .bakercontentp1{
+    font-size: 12px;
+    color: #ee7560;
+}
+.baker .bakercards .bc1 .bakercontent .bakercontentp2{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.baker .bakercards .bc1 .bakercontent .bakercontentp3{
+    font-size: 15px;
+    margin-top: 5px;
+    
+}
+.baker .bakercards .bc1 .bakercontent i{
+    margin: 20px 20px;
+}
+
+
+.baker .bakercards .bc2{
+    height: 500px;
+    width: 350px;
+    background: white ;
+}
+.baker .bakercards .bc2 .bakerimage{
+    height: 270px;
+    width: 350px;
+}
+.baker .bakercards .bc2 .bakercontent{
+    height: 230px;
+    width: 350px;
+    padding: 0 15px;
+    padding-top: 30px;
+    text-align: center;
+}
+.baker .bakercards .bc2 .bakercontent h3{
+    font-family: serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.baker .bakercards .bc2 .bakercontent .bakercontentp1{
+    font-size: 12px;
+    color: #ee7560;
+}
+.baker .bakercards .bc2 .bakercontent .bakercontentp2{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.baker .bakercards .bc2 .bakercontent .bakercontentp3{
+    font-size: 15px;
+    margin-top: 5px;
+    
+}
+.baker .bakercards .bc2 .bakercontent i{
+    margin: 20px 20px;
 }
