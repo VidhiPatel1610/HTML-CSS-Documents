@@ -5,14 +5,38 @@
     .img{background-size: auto;}
     .content h1{font-size: 24px;}
     .content p{font-size: 12px;}
-    .nav .list{display: none;}
-    .nav .list .fa-bars{display: inline;}
-    .nav .fa-cart-shopping{
-        padding:0 20px;
+    .img .down{z-index: -1;}
+    .img .down2{z-index: 1;}
+    .deal{display: block; margin-right: 0;
+        margin-left: 0;}
+    .deal .image{
+            width: 100%;
+            margin-top: 50px;
+            margin-left: 0;
+            line-height: 0;
     }
-    /* .deal{width: 100%;}
-    .deal .image{width: 100%;}
-    .deal .data{width: 100%;} */
+    .deal .data{
+        width: 100%;
+    }
+    .deal .data h2{
+        padding-top: 0;
+    }
     .deal .data .line{margin-left: 30px;}
     .deal .data .num{margin-left: 40px;}
+    .sweet .cards{
+        display: inline;
+        padding:20px;
+    }
+    .sweet .cards .c1{
+        width: 50%;
+    }
+    .sweet .cards .c2{
+        width: 50%;
+    }
+    .sweet .cards .c3{
+        display: none;
+    }
+    .sweet .cards .c4{
+        display: none;
+    }
 }
