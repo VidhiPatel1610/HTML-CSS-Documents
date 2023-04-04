@@ -477,6 +477,7 @@
 .sweet{
     height:600px;
     padding-top: 50px;
+    background: #333;
 }
 .sweet h1{
     color: #cf2e2e;
@@ -504,14 +505,14 @@
     background:rgb(203, 201, 201);
     display: inline-block;
 }
+
 .sweet .cards{
     display: flex;
-    flex-wrap: wrap;
     padding:0 100px;
     margin-top: 50px;
 }
 .sweet .cards .c1{
-    /* height: 400px; */
+    height: 400px;
     width: 25%;
 }
 .sweet .cards .c1 .img{
@@ -533,7 +534,7 @@
     margin-top: 30px;
 }
 .sweet .cards .c2{
-    /* height: 400px; */
+    height: 400px;
     width: 25%;
 }
 .sweet .cards .c2 .img{
@@ -635,6 +636,8 @@
     left: 15px;
     color: white;
 }
+
+
 .Dessert{
     height: 500px;
     margin-top: 100px;
@@ -1334,14 +1337,16 @@
     width: 350px;
     background: white ;
     margin-right: 30px;
-    overflow: hidden;
 }
 .baker .bakercards .bc1 .bakerimage{
     height: 270px;
     width: 350px;
-    transition: 2s;
+    overflow: hidden;
 }
-.baker .bakercards .bc1 .bakerimage:hover{
+.baker .bakercards .bc1 img{
+    transition: 1s;
+}
+.baker .bakercards .bc1 .bakerimage:hover img{
     transform: scale(1.2);
 }
 .baker .bakercards .bc1 .bakercontent{
@@ -1383,6 +1388,13 @@
 .baker .bakercards .bc2 .bakerimage{
     height: 270px;
     width: 350px;
+    overflow: hidden;
+}
+.baker .bakercards .bc2 img{
+    transition: 1s;
+}
+.baker .bakercards .bc2 .bakerimage:hover img{
+    transform: scale(1.2);
 }
 .baker .bakercards .bc2 .bakercontent{
     height: 230px;
@@ -1459,6 +1471,21 @@
     margin-right: 10px;
     border-radius: 10px;
     padding: 25px;
+    position: relative;
+    z-index: 1;
+}
+.blog .blogimg1:hover{
+    background-size: 120% 120%;
+}
+.blogimgrgba{
+    height: 500px;
+    width: 100%;
+    background: rgba(28, 16, 50, 0.61);
+    position: absolute;
+    top: -10px;
+    left: 0;
+    border-radius: 10px;
+    z-index: -1;
 }
 .blog .blogimg1 p{
     color: white;
@@ -1507,6 +1534,18 @@
     margin-bottom: 30px;
     border-radius: 10px;
     padding: 25px;
+    position: relative;
+    z-index: 1;
+}
+.blogpart1rgba{
+    height: 235px;
+    width: 100%;
+    background: rgba(28, 16, 50, 0.61);
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    z-index: -1;   
 }
 .blog .blogimg2 .blogpart1 p{
     color: white;
@@ -1543,6 +1582,18 @@
     background:url(../images/blog3.jpg);
     border-radius: 10px;
     padding: 25px;
+    position: relative;
+    z-index: 1;
+}
+.blogpart2rgba{
+    height: 235px;
+    width: 100%;
+    background: rgba(28, 16, 50, 0.61);
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    z-index: -1;
 }
 .blog .blogimg2 .blogpart2 p{
     color: white;
@@ -1770,4 +1821,82 @@
     position: absolute;
     top: 0;
     right: 0;
+}
+.lastdetails{
+    height: 300px;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+}
+.lastdetails .last1{
+    height: 300px;
+    width: 25%;
+}
+.lastdetails .last1 h3{
+    font-size: 16px;
+    font-family: serif;
+    letter-spacing: 1px;
+}
+.lastdetails .last1 img{
+    margin-top: 10px;
+    text-align: center;
+}
+.lastdetails .last2{
+    height: 300px;
+    width: 25%;
+}
+.lastdetails .last2 h3{
+    font-size: 16px;
+    font-family: serif;
+    letter-spacing: 1px;
+}
+.lastdetails .last2 p{
+    font-size: 15px;
+    color: #535353;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin: 15px 0;
+}
+.lastdetails .last2 div{
+    font-size: 15px;
+    color: #949494;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.lastdetails .last3{
+    height: 300px;
+    width: 25%;
+}
+.lastdetails .last3 h3{
+    font-size: 16px;
+    font-family: serif;
+    letter-spacing: 1px;
+}
+.lastdetails .last3 p{
+    font-size: 15px;
+    color: #949494;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.lastdetails .last4{
+    height: 300px;
+    width: 25%;
+}
+.lastdetails .last4 h3{
+    font-size: 16px;
+    font-family: serif;
+    letter-spacing: 1px;
+}
+.lastdetails .last4 i{
+    font-size: 18px;
+    margin: 15px 15px;
+}
+.lastdetails .last4 i:hover{
+    color: #ee7560;
+}
+.lastdetails .last4 div{
+    font-size: 12px;
+    color: #949494;
+    margin-top: 30px;
 }

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .nav
+        {
+            height: 100px;
+            width: 100%;
+            background: rgb(223, 36, 95);        
+            margin: auto;
+            padding: 30px 150px;
+        }
+        .nav .mainul{
+            background: lightgreen;
+        }
+        .nav .mainli{
+            display: inline;
+            font-size: 30px;
+            font-weight: bold;
+            margin-right: 20px;
+            position: relative;
+        }
+        .mainli .news{
+            height: 400px;
+            width: 700px;
+            background: white;
+            box-shadow: 0 0 20px black;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: flex;
+            opacity: 0;
+        }
+        .mainli .newsul{
+            height: 400px;
+            width: 30%;
+            list-style: none;
+            padding: 30px 50px;
+            background: lightcyan;
+        }
+        .mainli .newsli{
+            list-style: disc;
+        }
+        .nav .mainli:hover .news{
+            opacity: 1;
+        }
+        .news .subfashion{
+            height: 400px;
+            width: 70%;
+            background: lightgrey;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 30%;
+            opacity: 0;
+            transition: 1s;
+        }
+        .news .subfashion .box{
+            height: 300px;
+            width: 200px;
+            background: lightcoral;
+            margin: 50px 20px;
+            border: 2px solid rgb(157, 71, 71);
+            box-shadow: 0 0 20px rgb(157, 71, 71);
+        }
+        .nav .newsli:hover .subfashion{
+            opacity: 1;
+        }
+        .nav .subtechnology{
+            height: 400px;
+            width: 70%;
+            background: lightgrey;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 30%;
+            opacity: 0;
+            transition: 1s;
+        }
+        .news .subtechnology .box{
+            height: 300px;
+            width: 200px;
+            background: lightcoral;
+            margin: 50px 20px;
+            border: 2px solid rgb(157, 71, 71);
+            box-shadow: 0 0 20px rgb(157, 71, 71);
+        }
+        .nav .newsli:hover .subtechnology{
+            opacity: 1;
+        }
+
+        .nav .entertainment{
+            height: 400px;
+            width: 700px;
+            background: white;
+            box-shadow: 0 0 20px black;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: flex;
+            opacity: 0;
+        }
+        .nav .entertainmentul{
+            height: 400px;
+            width: 40%;
+            list-style: none;
+            padding: 30px 30px;
+            background: lightcyan;
+        }
+        .nav .entertainmentli{
+            list-style: disc;
+        }
+        .nav .mainli:hover .entertainment{
+            opacity: 1;
+        }
+        .nav .entertainmentli .sube1{
+            height: 400px;
+            width: 60%;
+            background: lightgrey;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 40%;
+            opacity: 0;
+            transition: 1s;
+        }
+        .nav .entertainmentli .sube1 .box{
+            height: 300px;
+            width: 200px;
+            background: lightcoral;
+            margin: 50px 20px;
+            border: 2px solid rgb(157, 71, 71);
+            box-shadow: 0 0 20px rgb(157, 71, 71);
+        }
+        .nav .entertainmentli:hover .sube1{
+            opacity: 1;
+        }
+        .nav .entertainmentli .sube2{
+            height: 400px;
+            width: 60%;
+            background: lightgrey;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 40%;
+            opacity: 0;
+            transition: 1s;
+        }
+        .nav .entertainmentli .sube2 .box{
+            height: 300px;
+            width: 200px;
+            background: lightcoral;
+            margin: 50px 20px;
+            border: 2px solid rgb(157, 71, 71);
+            box-shadow: 0 0 20px rgb(157, 71, 71);
+        }
+        .nav .entertainmentli:hover .sube2{
+            opacity: 1;
+        }
+
+        .nav .music{
+            height: 400px;
+            width: 700px;
+            background: white;
+            box-shadow: 0 0 20px black;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: flex;
+            opacity: 0;
+        }
+        .nav .musicul{
+            height: 400px;
+            width: 30%;
+            list-style: none;
+            padding: 30px 50px;
+            background: lightcyan;
+        }
+        .nav .musicli{
+            list-style: disc;
+        }
+        .nav .mainli:hover .music{
+            opacity: 1;
+        }
+        .nav .subm1{
+            height: 400px;
+            width: 70%;
+            background: lightgrey;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 30%;
+            opacity: 0;
+            transition: 1s;
+        }
+        .nav .subm1 .box{
+            height: 300px;
+            width: 200px;
+            background: lightcoral;
+            margin: 50px 20px;
+            border: 2px solid rgb(157, 71, 71);
+            box-shadow: 0 0 20px rgb(157, 71, 71);
+        }
+        .nav .musicli:hover .subm1{
+            opacity: 1;
+        }
+        .nav .subm2{
+            height: 400px;
+            width: 70%;
+            background: lightgrey;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 30%;
+            opacity: 0;
+            transition: 1s;
+        }
+        .nav .subm2 .box{
+            height: 300px;
+            width: 200px;
+            background: lightcoral;
+            margin: 50px 20px;
+            border: 2px solid rgb(157, 71, 71);
+            box-shadow: 0 0 20px rgb(157, 71, 71);
+        }
+        .nav .musicli:hover .subm2{
+            opacity: 1;
+        }
+
+        .nav .sports{
+            height: 400px;
+            width: 700px;
+            background: white;
+            box-shadow: 0 0 20px black;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: flex;
+            opacity: 0;
+        }
+        .nav .sportsul{
+            height: 400px;
+            width: 30%;
+            list-style: none;
+            padding: 30px 50px;
+            background: lightcyan;
+        }
+        .nav .sportsli{
+            list-style: disc;
+        }
+        .nav .mainli:hover .sports{
+            opacity: 1;
+        }
+        .nav .subs1{
+            height: 400px;
+            width: 70%;
+            background: lightgrey;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 30%;
+            opacity: 0;
+            transition: 1s;
+        }
+        .nav .subs1 .box{
+            height: 300px;
+            width: 200px;
+            background: lightcoral;
+            margin: 50px 20px;
+            border: 2px solid rgb(157, 71, 71);
+            box-shadow: 0 0 20px rgb(157, 71, 71);
+        }
+        .nav .sportsli:hover .subs1{
+            opacity: 1;
+        }
+        .nav .subs2{
+            height: 400px;
+            width: 70%;
+            background: lightgrey;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 30%;
+            opacity: 0;
+            transition: 1s;
+        }
+        .nav .subs2 .box{
+            height: 300px;
+            width: 200px;
+            background: lightcoral;
+            margin: 50px 20px;
+            border: 2px solid rgb(157, 71, 71);
+            box-shadow: 0 0 20px rgb(157, 71, 71);
+        }
+        .nav .sportsli:hover .subs2{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="mainul">
+            <li class="mainli">News
+                <div class="news">
+                    <ul class="newsul">
+                        <li class="newsli">Fashion
+                            <div class="subfashion">
+                                <div class="box">Fashion 1</div>
+                                <div class="box">Fashion 2</div>
+                            </div>
+                        </li>
+                        <li class="newsli">Technology
+                            <div class="subtechnology">
+                                <div class="box">Technology 1</div>
+                                <div class="box">Technology 2</div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </li>
+            <li class="mainli">Entertainment
+                <div class="entertainment">
+                    <ul class="entertainmentul">
+                        <li class="entertainmentli">Entertainment 1
+                            <div class="sube1">
+                                <div class="box">E1</div>
+                                <div class="box">E1</div>
+                            </div>
+                        </li>
+                        <li class="entertainmentli">Entertainment 2
+                            <div class="sube2">
+                                <div class="box">E2</div>
+                                <div class="box">E2</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mainli">Music
+                <div class="music">
+                    <ul class="musicul">
+                        <li class="musicli">Music 1
+                            <div class="subm1">
+                                <div class="box">Music 1</div>
+                                <div class="box">Music 1</div>
+                            </div>
+                        </li>
+                        <li class="musicli">Music 2
+                            <div class="subm2">
+                                <div class="box">Music 2</div>
+                                <div class="box">Music 2</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mainli">Sports
+                <div class="sports">
+                    <ul class="sportsul">
+                        <li class="sportsli">Sports 1
+                            <div class="subs1">
+                                <div class="box">Sports 1</div>
+                                <div class="box">Sports 1</div>
+                            </div>
+                        </li>
+                        <li class="sportsli">Sports 2
+                            <div class="subs2">
+                                <div class="box">Sports 2</div>
+                                <div class="box">Sports 2</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

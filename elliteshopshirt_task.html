@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container
+        {
+            border: 5px solid black;
+            padding: 35px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .main
+        {
+           height: 400px;
+           width: 250px;
+           background: coral;
+           position: relative;
+           border: 2px solid red;
+           box-shadow: 5px 5px 10px black;
+           margin: 20px;
+        }
+        .front
+        {
+          height: inherit;
+          width: inherit;
+          background: lightblue;
+          backface-visibility: hidden;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: rotateY(180deg);
+          transition: 1s;
+        }
+
+        .back
+
+        {
+          height: inherit;
+          width: inherit;
+          background: lightcyan;
+          backface-visibility: hidden;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: rotateY(0deg);
+          transition: 1s;
+        }
+
+        .main:hover .front
+        {
+            transform: rotateY(0deg);
+        }
+
+        .main:hover .back
+        {
+            transform: rotateY(180deg);
+        }
+        .pro-view
+        {
+          height: 50px;
+          width: 250px;
+          background:lightgreen;
+          text-align: center;
+          line-height: 50px;
+          top: 0;
+          left: 0;
+          position: absolute;
+          transition: 1s;
+          justify-content: center;
+          opacity: 0;
+        }
+        .image
+        {
+            height: 250px;
+            width: 250px;
+            background: lightseagreen;
+            transition: 0;
+            display: flex;
+            flex: wrap;
+        }
+        .image:hover .pro-view
+        {
+            top: 200px;
+            left: 0;
+            opacity: 1;
+        }
+        .pro-view:hover
+        { 
+            background: black;
+            color: white;
+        }
+        .link
+        {
+            height: 50px;
+            width: 100;
+            background: lightblue;
+            text-align: center;
+            line-height: 50px;
+        }
+        .link a
+        {
+            text-decoration: none;
+            font-size: 20px;
+            color: red;
+        }
+        .amount
+        {
+            height: 50px;
+            width: 250px;
+            background: lightgray;
+            text-align: center;
+            line-height: 50px;
+            color: black;
+
+        }
+         .card
+        {
+            height: 50px;
+            width: 250px;
+            background:lightseagreen;
+            text-align: center;
+            line-height: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="main">
+        <div class="image">
+            <div class="front">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="back">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="pro-view">QUICK VIEW</div>
+        </div>  
+        <div class="link">
+              <a href="#">Former Blue Shirt</a>
+        </div>
+        <div class="amount">
+            $45.99 &nbsp;&nbsp;<strike style="color: grey;"> $69.71 </strike>
+        </div>
+        <div class="card">ADD TO CARD </div>
+    </div>
+
+    <div class="main">
+        <div class="image">
+            <div class="front">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="back">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="pro-view">QUICK VIEW</div>
+        </div>  
+        <div class="link">
+              <a href="#">Former Blue Shirt</a>
+        </div>
+        <div class="amount">
+             $45.99 &nbsp;&nbsp;<strike style="color: grey;"> $69.71 </strike>
+        </div>
+        <div class="card">ADD TO CARD </div>
+
+    </div>
+
+    
+    <div class="main">
+        <div class="image">
+            <div class="front">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="back">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="pro-view">QUICK VIEW</div>
+        </div>  
+        <div class="link">
+              <a href="#">Former Blue Shirt</a>
+        </div>
+        <div class="amount">
+             $45.99&nbsp;&nbsp; <strike style="color: grey;"> $69.71 </strike>
+        </div>
+        <div class="card">ADD TO CARD </div>
+
+    </div>
+
+    <div class="main">
+        <div class="image">
+            <div class="front">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="back">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="pro-view">QUICK VIEW</div>
+        </div>  
+        <div class="link">
+              <a href="#">Former Blue Shirt</a>
+        </div>
+        <div class="amount">
+             $45.99 &nbsp;&nbsp;<strike style="color: grey;"> $69.71 </strike>
+        </div>
+        <div class="card">ADD TO CARD </div>
+
+    </div>
+
+
+    <div class="main">
+        <div class="image">
+            <div class="front">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m5.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="back">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m5.jpg " height="100%" width="100%">
+            </div>
+
+            <div class="pro-view">QUICK VIEW</div>
+        </div>  
+        <div class="link">
+              <a href="#">Men's Black Jeans </a>
+        </div>
+        <div class="amount">
+             $45.99 &nbsp;&nbsp;<strike style="color: grey;"> $69.71 </strike>
+        </div>
+        <div class="card">ADD TO CARD </div>
+
+    </div>
+
+    <div class="main">
+        <div class="image">
+            <div class="front">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="back">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg " height="100%" width="100%">
+            </div>
+
+            <div class="pro-view">QUICK VIEW</div>
+        </div>  
+        <div class="link">
+              <a href="#" >Analog Watch </a>
+        </div>
+        <div class="amount">
+             $45.99 &nbsp;&nbsp;<strike style="color: grey;"> $69.71 </strike>
+        </div>
+        <div class="card">ADD TO CARD </div>
+
+    </div>
+
+    <div class="main">
+        <div class="image">
+            <div class="front">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m6.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="back">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m6.jpg " height="100%" width="100%">
+            </div>
+
+            <div class="pro-view">QUICK VIEW</div>
+        </div>  
+        <div class="link">
+              <a href="#" > Reversible Belt </a>
+        </div>
+        <div class="amount">
+             $45.99 &nbsp;&nbsp;<strike style="color: grey;"> $69.71 </strike>
+        </div>
+        <div class="card">ADD TO CARD </div>
+
+    </div>
+
+    <div class="main">
+        <div class="image">
+            <div class="front">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m8.jpg" height="100%" width="100%">
+            </div>
+
+            <div class="back">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m8.jpg " height="100%" width="100%">
+            </div>
+
+            <div class="pro-view">QUICK VIEW</div>
+        </div>  
+        <div class="link">
+              <a href="#"> Party's Wear Blazer </a>
+        </div>
+        <div class="amount">
+             $45.99 &nbsp;&nbsp;<strike style="color: grey;"> $69.71 </strike>
+        </div>
+        <div class="card">ADD TO CARD </div>
+
+    </div>
+    </div>
+</body>
+</html>

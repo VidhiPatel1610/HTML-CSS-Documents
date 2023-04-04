@@ -23,7 +23,7 @@
     }
     .deal .data .line{margin-left: 30px;}
     .deal .data .num{margin-left: 40px;}
-    .sweet .cards{
+    /* .sweet .cards{
         display: inline;
         padding:20px;
     }
@@ -38,5 +38,5 @@
     }
     .sweet .cards .c4{
         display: none;
-    }
+    } */
 }
