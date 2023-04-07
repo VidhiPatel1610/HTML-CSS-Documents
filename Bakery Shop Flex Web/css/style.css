@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .header{
     /* height: 40px; */
@@ -206,8 +205,6 @@
     height: 500px;
     width: 200px;
     background: white;
-    padding: 0;
-    margin: 0;
     position: absolute;
     top: 100%;
     left: -50px;
@@ -222,7 +219,6 @@
 .homeul .subli{
     list-style: none;
 }
-
 .nav .limain:hover .homeul{
     display: block;
 }
@@ -367,23 +363,21 @@
     color: black;
 }
 .deal .data .line{
-    height: 20px;
-    width: 430px;
-    background: #cf2e2e;
-    margin-left: 60px;
+    border: 10px solid  #cf2e2e ;
     border-radius: 100px;
+    margin: 0 50px;
 }
 .deal .data .num{
-    height: 120px;
-    width: 430px;
-    background: white;
-    margin-left: 60px;
+    height: 100px;
+    width: 80%;
     display: flex;
+    justify-content: center;
+    margin: auto;
 }
 .deal .data .num .part1{
-    height: 120px;
-    width: 130px;
-    margin-right: 20px;
+    height: 100px;
+    margin:0 40px;
+    
 }
 .deal .data .num .part1 h1{
     font-size: 55px;
@@ -393,9 +387,8 @@
     font-size: 18px;
 }
 .deal .data .num .part3{
-    height: 120px;
-    width: 130px;
-    margin:0 20px;
+    height: 100px;
+    margin:0 40px;
 }
 .deal .data .num .part3 h1{
     font-size: 55px;
@@ -406,8 +399,7 @@
 }
 .deal .data .num .part5{
     height: 120px;
-    width: 130px;
-    margin-left: 20px;
+    margin:0 40px;
 }
 .deal .data .num .part5 h1{
     font-size: 55px;
@@ -418,7 +410,6 @@
 }
 .deal .data .num .part2{
     height: 120px;
-    width: 20px;
 }
 .deal .data .num .part2{
     font-size: 50px;
@@ -427,7 +418,6 @@
 }
 .deal .data .num .part4{
     height: 120px;
-    width: 20px;
 }
 .deal .data .num .part4{
     font-size: 50px;
@@ -477,7 +467,6 @@
 .sweet{
     height:600px;
     padding-top: 50px;
-    background: #333;
 }
 .sweet h1{
     color: #cf2e2e;
@@ -489,152 +478,16 @@
     width: 100px;
     background:rgb(203, 201, 201);
     display: inline-block;
+}
+.sweet .x{
     margin-left: 30%;
 }
 .sweet div{
     font-size: 40px;
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: 2px;
     display: inline;
-    margin: 0 5px;
-}
-.sweet .div2{
-    height: 20px;
-    width: 100px;
-    background:rgb(203, 201, 201);
-    display: inline-block;
-}
-
-.sweet .cards{
-    display: flex;
-    padding:0 100px;
-    margin-top: 50px;
-}
-.sweet .cards .c1{
-    height: 400px;
-    width: 25%;
-}
-.sweet .cards .c1 .img{
-    height: 250px;
-}
-.sweet .cards .c1 .ccake h3{
-    font-size: 14px;
-    margin: 15px 0;
-}
-/* .sweet .cards .c1 .ccake h3:hover{
-    color: #cf2e2e;
-} */
-.sweet .cards .c1 .ccake p{
-    font-size: 12px;
-    margin: 15px 0;
-}
-.sweet .cards .c1 .ccake div{
-    font-size: 18px;
-    margin-top: 30px;
-}
-.sweet .cards .c2{
-    height: 400px;
-    width: 25%;
-}
-.sweet .cards .c2 .img{
-    height: 250px;
-    position: relative;
-}
-.sweet .cards .c2 .ccake h3{
-    font-size: 14px;
-    margin: 15px 0;
-}
-.sweet .cards .c2 .ccake p{
-    font-size: 12px;
-    margin: 15px 0;
-}
-.sweet .cards .c2 .ccake div{
-    font-size: 18px;
-    margin-top: 30px;
-}
-.sweet .cards .c2 .img .sale .badge img{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.sweet .cards .c2 .img .sale .badge .text p{
-    font-size: 16px;
-    font-weight: bold;
-    transform: rotate(-20deg);
-    position: absolute;
-    top: 18px;
-    left: 10px;
-    color: white;
-}
-.sweet .cards .c3{
-    height: 400px;
-    width: 25%;
-}
-.sweet .cards .c3 .img{
-    height: 250px;
-    position: relative;
-}
-.sweet .cards .c3 .ccake h3{
-    font-size: 14px;
-    margin: 15px 0;
-}
-.sweet .cards .c3 .ccake p{
-    font-size: 12px;
-    margin: 15px 0;
-}
-.sweet .cards .c3 .ccake div{
-    font-size: 18px;
-    margin-top: 30px;
-}
-.sweet .cards .c3 .img .sale .badge img{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.sweet .cards .c3 .img .sale .badge .text p{
-    font-size: 16px;
-    font-weight: bold;
-    transform: rotate(-20deg);
-    position: absolute;
-    top: 18px;
-    left: 10px;
-    color: white;
-}
-.sweet .cards .c4{
-    height: 400px;
-    width: 25%;
-
-}
-.sweet .cards .c4 .img{
-    height: 250px;
-    position: relative;
-}
-.sweet .cards .c4 .ccake h3{
-    font-size: 14px;
-    margin: 15px 0;
-}
-.sweet .cards .c4 .ccake p{
-    font-size: 12px;
-    margin: 15px 0;
-}
-.sweet .cards .c4 .ccake div{
-    font-size: 18px;
-    margin-top: 30px;
-}
-.sweet .cards .c4 .img .sale .badge img{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.sweet .cards .c4 .img .sale .badge .text p{
-    font-size: 16px;
-    font-weight: bold;
-    transform: rotate(-20deg);
-    position: absolute;
-    top: 18px;
-    left: 15px;
-    color: white;
+    margin: 5px 5px;
 }
 
 
@@ -1245,45 +1098,28 @@
 .baker .ourbaker{
     height: 650px;
     width: 40%;
-    padding-left: 100px;
-    padding-top: 80px;
+    padding: 80px 0 0 100px;
 }
 .baker .ourbaker h1{
     font-family: serif;
     letter-spacing: 2px;
     margin-bottom: 40px;
 }
-.baker .ourbaker .bakerp1{
+.baker .ourbaker .x{
     font-size: 15px;
 }
 .baker .ourbaker .bakerp11{
-    font-size: 15px;
     margin-bottom: 40px;
 }
-.baker .ourbaker .bakerp2{
-    font-size: 15px;
-}
-.baker .ourbaker .bakerp3{
-    font-size: 15px;
-}
-.baker .ourbaker .bakerp4{
-    font-size: 15px;
-}
-.baker .ourbaker .bakerp5{
-    font-size: 15px;
-}
 .baker .ourbaker .bakerp6{
-    font-size: 15px;
     list-style: circle;
     margin: 30px 0;
 }
 .baker .ourbaker .bakerp7{
-    font-size: 15px;
     list-style: circle;
     margin: 30px 0;
 }
 .baker .ourbaker .bakerp8{
-    font-size: 15px;
     list-style: circle;
     margin: 30px 0;
 }
@@ -1468,14 +1304,17 @@
     width: 50%;
     background: url(../images/blog1.jpg);
     background-size: 100% 100%;
+    background-position: center;
     margin-right: 10px;
     border-radius: 10px;
     padding: 25px;
     position: relative;
     z-index: 1;
+    transition: 1s;
+    background-position: center;
 }
 .blog .blogimg1:hover{
-    background-size: 120% 120%;
+    background-size: 110% 110%;
 }
 .blogimgrgba{
     height: 500px;
@@ -1536,6 +1375,11 @@
     padding: 25px;
     position: relative;
     z-index: 1;
+    background-position: center;
+    transition: 1s;
+}
+.blog .blogimg2 .blogpart1:hover{
+    background-size: 110% 110%;
 }
 .blogpart1rgba{
     height: 235px;
@@ -1580,10 +1424,16 @@
     height: 235px;
     width: 100%;
     background:url(../images/blog3.jpg);
+    background-size: 100% 100%;
     border-radius: 10px;
     padding: 25px;
     position: relative;
     z-index: 1;
+    background-position: center;
+    transition: 1s;
+}
+.blog .blogimg2 .blogpart2:hover{
+    background-size: 110% 110%;
 }
 .blogpart2rgba{
     height: 235px;
@@ -1635,18 +1485,16 @@
 .company img{
     margin: 0 10px;
 }
-
 .map{
-    height: 650px;
-    width: 100%;
-    background: lightgreen;
+    position: relative;
 }
 .map .contactus{
     height: 650px;
     width: 500px;
-    background: rgba(0,0,0,0.5);
-    padding-top: 50px;
-    margin-left: 100px;
+    background: rgba(16, 1, 40, 0.694);
+    position: absolute;
+    top: 0;
+    left: 100px;
 }
 .map .contactus h1{
     text-align: center;

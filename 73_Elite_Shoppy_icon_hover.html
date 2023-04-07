@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.css">
+    <style>
+        a
+        {
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+            transition: 1s;
+            transform-style: preserve-3d;
+        }
+        .front{
+            height: inherit;
+            width: 50px;
+            background:#3b5998;
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateZ(20px);
+        }
+        .back{
+            height: inherit;
+            width: 50px;
+            background:white;
+            color:black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateX(90deg) translateZ(25px);
+        }
+        a:hover{
+            transform: rotateX(-90deg) translateZ(0);
+        }
+       
+    </style>
+</head>
+<body>
+    <a href="">
+        <div class="front">
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="back">
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+    </a>
+    <a href="">
+        <div class="front" style="background:#1DA1F2">
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="back">
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </a>
+    <a href="">
+        <div class="front" style="background:orangered">
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="back">
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </a>
+    <a href="">
+        <div class="front" style="background:brown">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <div class="back">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+    </a>
+</body>
+</html>

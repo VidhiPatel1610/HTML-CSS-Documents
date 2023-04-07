@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: sahil;
+        }
+        h1::before{
+            counter-increment: sahil;
+            content: "No:" counter(sahil) " "; 
+        }
+        ul .x:first-child::before{
+            content: "";
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            background-image: url(Images/Ganesh.jpg);
+            background-size: contain;
+            margin-left: -20px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="x">Vidhi Patel</li>
+        <li class="x">Vidhi Patel</li>
+        <li class="x">Vidhi Patel</li>
+        <li class="x">Vidhi Patel</li>
+    </ul>
+
+    <h1>Sahil Patel</h1>
+    <h1>Sahil Patel</h1>
+    <h1>Sahil Patel</h1>
+    <h1>Sahil Patel</h1>
+    <h1>Sahil Patel</h1>
+    <h1>Sahil Patel</h1>
+</body>
+</html>

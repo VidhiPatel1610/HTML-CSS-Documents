@@ -21,8 +21,18 @@
     .deal .data h2{
         padding-top: 0;
     }
-    .deal .data .line{margin-left: 30px;}
-    .deal .data .num{margin-left: 40px;}
+    .deal .data .num .part1 h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .deal .data .num .part3 h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .deal .data .num .part5 h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
     /* .sweet .cards{
         display: inline;
         padding:20px;
