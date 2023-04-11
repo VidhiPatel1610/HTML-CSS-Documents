@@ -15,6 +15,10 @@
             margin-left: 0;
             line-height: 0;
     }
+    .deal .image img{
+        height: 400px;
+        width: 100%;
+    }
     .deal .data{
         width: 100%;
     }
@@ -33,20 +37,184 @@
         font-size: 30px;
         margin-top: 20px;
     }
-    /* .sweet .cards{
+    .sweet .div1{
+        display: none;
+    }
+    .sweet .div2{
+        display: none;
+    }
+    .sweet div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+    }
+    .sweet{
+        margin-top: 30px;
+    }
+    .sweet h1{
+        font-size: 16px;
+    }
+    .cakecards{
+        width: 100%;
+        margin: 0;
+    }
+    .cakecards .x{
+        width: 50%;
+    }
+    .Dessert .backgroud{
+        background-size: 100% 100%;
+    }
+    .Dessert .backgroud .roundimg{
+        left: 35%;
+    }
+    .Dessert .backgroud .ceodata .div1{
+        font-size: 20px;
+        text-transform: capitalize;
+        text-align: center;
+        margin: 20px 0;
+        line-height: 20px;
+    }
+    .happy h1{
+        font-size: 16px;
+    }
+    .happy .div1,.happy .div2{
+        display: none;
+    }
+    .happy div{
+        font-size: 34px;
+        display: block;
+    }
+    .happyimg .happyimg1{
+        width: 100%;
+        margin-left: 0;
+        padding: 10px 30px;
+    }
+    .happyimg .happyimg2 .part1{
+        width: 100%;
         display: inline;
-        padding:20px;
     }
-    .sweet .cards .c1{
-        width: 50%;
+    .happyimg .happyimg2 .part1 .p1{
+        width:485px;
+        padding: 10px 30px;
     }
-    .sweet .cards .c2{
-        width: 50%;
+    .happyimg .happyimg2 .part1 .p2{
+        width: 485px;
+        padding: 10px 30px;
     }
-    .sweet .cards .c3{
+    .happyimg .happyimg2 .part2{
+        width: 485px;
+        padding:10px 30px;
+    }
+    .hotcake .h11{
+        width: 100%;
+        padding-left: 50px;
+    }
+    .hotcake .h12{
+        width: 100%;
+        padding-left: 50px;
+    }
+    .cupcakecards{
+        padding: 0;
+    }
+    .cupcakecards .part1{
+        width: 100%;
+    }
+    .cupcakecards .part2{
+        width: 100%;
+    }
+    .baker .bakercards{
+        padding-top: 0px;
+    }
+    .baker .ourbaker{
+        width: 100%;
+        padding:50px 30px; 
+    }
+    .baker .ourbaker .x{
+        font-size: 18px;
+    }
+    .baker .bakercards .bc1{
+        margin-left: 50px;
+    }
+    .baker .bakercards .bc2{
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    .blogstory p{
+        font-size: 20px;
+    }
+    .blogstory .div1{
         display: none;
     }
-    .sweet .cards .c4{
+    .blogstory h1{
+        font-size: 35px;
+        display: block;
+    }
+    .blogstory .div2{
         display: none;
-    } */
+    }
+    .blog{
+        padding: 0px 20px;
+    }
+    .blog .blogimg1{
+        width: 100%;
+    }
+    .blog .blogimg2{
+        width: 100%;
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    .company{
+        margin-top: 50px;
+    }
+    .company img{
+        margin: 0 10px;
+        height: 50px;
+        width: 50px;
+    }
+    .map{
+        height: auto;
+    }
+    .map .contactus{
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background: #333;
+    }
+    .footer{
+        padding: 20px;
+    }
+    .footer .footer1{
+        width:100%;
+    }
+    .footer .footer2{
+        width:100%;
+        text-align: left;
+        margin: 20px 0;
+    }
+    .footer .footer3{
+        width:100%;
+    }
+    .lastdetails{
+        padding: 50px 10px;
+    }
+    .lastdetails .last1{
+        height: auto;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .lastdetails .last2{
+        height: auto;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .lastdetails .last3{
+        height: auto;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .lastdetails .last4{
+        height: auto;
+        width: 100%;
+    }
 }

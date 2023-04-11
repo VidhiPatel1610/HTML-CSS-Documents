@@ -465,8 +465,7 @@
 }
 
 .sweet{
-    height:600px;
-    padding-top: 50px;
+    height:150px;
 }
 .sweet h1{
     color: #cf2e2e;
@@ -474,13 +473,11 @@
     text-align: center;
 }
 .sweet .div1{
-    height: 20px;
-    width: 100px;
-    background:rgb(203, 201, 201);
-    display: inline-block;
-}
-.sweet .x{
-    margin-left: 30%;
+        height: 20px;
+        width: 100px;
+        background:rgb(203, 201, 201);
+        display: inline-block;
+        margin-left: 32%;
 }
 .sweet div{
     font-size: 40px;
@@ -489,53 +486,110 @@
     display: inline;
     margin: 5px 5px;
 }
-
-
+.sweet .div2{
+    height: 20px;
+    width: 100px;
+    background:rgb(203, 201, 201);
+    display: inline-block;
+}
+.cakecards{
+    /* height: 400px; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cakecards .x{
+    height: 450px;
+    width: 25%;
+}
+.cakecards .cakeimage{
+    height: 300px;
+    position: relative;
+    transition: 0.9s;
+}
+.cakecards .cakeimage .effect{
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    line-height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility:hidden;
+}
+.cakecards .cakeimage:hover img{
+    opacity: 0.7;
+}
+.cakecards .cakeimage:hover .effect{
+    visibility: visible;
+}
+.cakecards .cakeimage .effect .fa-solid{
+    height: 50px;
+    width: 50px;
+    background: black;
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.5s;
+}
+.cakecards .cakeimage .effect .fa-solid:hover{
+    background: #ee7560;
+    transform: rotate(360deg);
+}
+.cakecards .desc{
+    height: 150px;
+    width: 100%;
+    font-family: serif;
+    text-align: center;
+}
+.cakecards .desc h3{
+    font-size: 20px;
+    margin: 10px;
+}
+.cakecards .desc p{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.cakecards .desc div{
+    font-size: 20px;
+}
 .Dessert{
-    height: 500px;
+    /* height: 500px; */
     margin-top: 100px;
 }
 .Dessert .backgroud{
     height: 500px;
     background: url(../images/Dessertbackground.jpg);
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
-    position: relative;
+    padding-top: 50px;
 }
 .Dessert .backgroud .roundimg{
     height: 130px;
     width: 130px;
     border-radius: 80px;
-    position: absolute;
-    top: 80px;
-    left: 45%;
     background:url(../images/roundimnage.jpg);
     border: 2px solid white;
     box-shadow: 0 0 10px white;
     background-size: contain;
+    margin:auto;
 }
 .Dessert .backgroud .ceodata p{
-    font-size: 14px;
+    font-size: 16px;
     text-transform: capitalize;
-    position: absolute;
-    top: 250px;
-    left: 520px;
+    text-align: center;
+    margin-top: 50px;
+    color: #3c3c3c;
 }
 .Dessert .backgroud .ceodata .div1{
-    font-size: 22px;
+    font-size: 28px;
     text-transform: capitalize;
-    line-height: 40px;
-    position: absolute;
-    top: 290px;
-    left: 150px;
-}
-.Dessert .backgroud .ceodata .div2{
-    font-size: 22px;
-    text-transform: capitalize;
-    line-height: 40px;
-    position: absolute;
-    top: 340px;
-    left: 180px;
+    text-align: center;
+    margin: 20px 80px;
+    line-height: 50px;
+    color: #3c3c3c;
 }
 .happy{
     height: 200px;
@@ -569,33 +623,34 @@
     display: inline-block;
 }
 .happyimg{
-    height: 550px;
+    /* height: 550px; */
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 .happyimg .happyimg1{
-    height: 550px;
+    /* height: 550px; */
     width: 50%;
     margin-left: 100px;
     padding: 15px;
-    
 }
 .happyimg .happyimg1:hover img{
     opacity: 0.8;
     transition:0.6s;
 }
 .happyimg .happyimg2{
-    height: 550px;
+    /* height: 550px; */
     width: 50%;
     padding-right: 100px;
 }
 .happyimg .happyimg2 .part1{
-    height: 50%;
+    /* height: 50%; */
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 .happyimg .happyimg2 .part1 .p1{
-    height: 100%;
+    /* height: 100%; */
     width: 50%;
     padding: 15px;
 }
@@ -604,7 +659,7 @@
     transition:0.6s;
 }
 .happyimg .happyimg2 .part1 .p2{
-    height: 100%;
+    /* height: 100%; */
     width: 50%;
     padding: 15px;
 }
@@ -613,7 +668,7 @@
     transition:0.6s;
 }
 .happyimg .happyimg2 .part2{
-    height: 50%;
+    /* height: 50%; */
     width: 100%;
     padding: 15px;
 }
@@ -622,9 +677,10 @@
     transition:0.6s;
 }
 .hotcake{
-    height: 100px;
+    /* height: 100px; */
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     line-height: 100px;
     margin-top: 30px;
 }
@@ -643,19 +699,21 @@
     padding-left: 60px;
 }
 .cupcakecards{
-    height: 600px;
+    /* height: 600px; */
     display:flex;
+    flex-wrap: wrap;
     padding: 0 100px;
     margin-top: 40px;
 }
 .cupcakecards .part1{
-    height: 600px;
+    /* height: 600px; */
     width: 50%;
 }
 .cupcakecards .part1 .p1{
     height: 200px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 .cupcakecards .part1 .p1 .ccake{
     height: 200px;
@@ -871,7 +929,7 @@
 
 
 .cupcakecards .part2{
-    height: 600px;
+    /* height: 600px; */
     width: 50%;
 }
 .cupcakecards .part2 .p1{
@@ -1089,14 +1147,15 @@
     box-shadow: 0 0 20px gray;
 }
 .baker{
-    height: 650px;
+    /* height: 650px; */
     width: 100%;
     background: rgb(232, 230, 230);
     margin-top: 100px;
     display: flex;
+    flex-wrap: wrap;
 }
 .baker .ourbaker{
-    height: 650px;
+    /* height: 650px; */
     width: 40%;
     padding: 80px 0 0 100px;
 }
@@ -1106,10 +1165,10 @@
     margin-bottom: 40px;
 }
 .baker .ourbaker .x{
-    font-size: 15px;
+    font-size: 18px;
 }
 .baker .ourbaker .bakerp11{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .baker .ourbaker .bakerp6{
     list-style: circle;
@@ -1162,11 +1221,12 @@
     box-shadow: 0 0 20px gray;
 }
 .baker .bakercards{
-    height: 650px;
+    /* height: 650px; */
     width: 60%;
     padding-right: 100px;
     padding-top: 80px;
     display: flex;
+    flex-wrap: wrap;
 }
 .baker .bakercards .bc1{
     height: 500px;
@@ -1217,7 +1277,7 @@
 
 
 .baker .bakercards .bc2{
-    height: 500px;
+    /* height: 500px; */
     width: 350px;
     background: white;
 }
@@ -1262,7 +1322,7 @@
     margin: 20px 20px;
 }
 .blogstory{
-    height: 100px;
+    /* height: 100px; */
     margin-top: 100px;
 }
 .blogstory p{
@@ -1293,10 +1353,11 @@
     display: inline-block;
 }
 .blog{
-    height: 500px;
+    /* height: 500px; */
     width: 100%;
     padding: 0 120px;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 50px;
 }
 .blog .blogimg1{
@@ -1360,7 +1421,7 @@
     padding: 0 40px;
 }
 .blog .blogimg2{
-    height: 500px;
+    /* height: 500px; */
     width: 50%;
     padding-left: 20px;
     /* color: rgba(0,0,0,0.6); */
@@ -1476,7 +1537,7 @@
 }
 
 .company{
-    height: 150px;
+    /* height: 150px; */
     width: 100%;
     background: #f5f3f0;
     margin-top: 100px;
@@ -1587,10 +1648,11 @@
 }
 
 .footer{
-    height: 300px;
+    /* height: 300px; */
     width:100%;
     background: #282c2f;
     display: flex;
+    flex-wrap: wrap;
     padding: 70px 100px;
 }
 .footer .footer1{
@@ -1671,10 +1733,11 @@
     right: 0;
 }
 .lastdetails{
-    height: 300px;
+    /* height: 300px; */
     width: 100%;
     padding: 50px 100px;
     display: flex;
+    flex-wrap: wrap;
 }
 .lastdetails .last1{
     height: 300px;
