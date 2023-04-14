@@ -627,12 +627,14 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    background: #337ab7;
+    padding: 0 50px;
 }
 .happyimg .happyimg1{
     /* height: 550px; */
     width: 50%;
-    margin-left: 100px;
     padding: 15px;
+    
 }
 .happyimg .happyimg1:hover img{
     opacity: 0.8;
@@ -641,7 +643,6 @@
 .happyimg .happyimg2{
     /* height: 550px; */
     width: 50%;
-    padding-right: 100px;
 }
 .happyimg .happyimg2 .part1{
     /* height: 50%; */
@@ -1153,11 +1154,12 @@
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
+    padding: 100px;
 }
 .baker .ourbaker{
     /* height: 650px; */
-    width: 40%;
-    padding: 80px 0 0 100px;
+    width: 35%;
+    background: lightblue;
 }
 .baker .ourbaker h1{
     font-family: serif;
@@ -1222,17 +1224,17 @@
 }
 .baker .bakercards{
     /* height: 650px; */
-    width: 60%;
-    padding-right: 100px;
-    padding-top: 80px;
+    width: 65%;
     display: flex;
     flex-wrap: wrap;
+    background: lightcoral;
+    gap: 30px;
 }
 .baker .bakercards .bc1{
-    height: 500px;
-    width: 350px;
+    /* height: 500px; */
+    width:350px;
     background: white ;
-    margin-right: 30px;
+    
 }
 .baker .bakercards .bc1 .bakerimage{
     height: 270px;
@@ -1355,14 +1357,15 @@
 .blog{
     /* height: 500px; */
     width: 100%;
-    padding: 0 120px;
+    padding: 0 100px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    background: #337ab7;
 }
 .blog .blogimg1{
     height: 500px;
-    width: 50%;
+    width: 48%;
     background: url(../images/blog1.jpg);
     background-size: 100% 100%;
     background-position: center;
@@ -1422,7 +1425,7 @@
 }
 .blog .blogimg2{
     /* height: 500px; */
-    width: 50%;
+    width: 48%;
     padding-left: 20px;
     /* color: rgba(0,0,0,0.6); */
 }

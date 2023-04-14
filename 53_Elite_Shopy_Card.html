@@ -26,7 +26,6 @@
         {
             height: 300px;
             width: 250px;
-            background: rgb(232, 121, 81);
             position: relative;
         }
         .card .img .front{
@@ -35,7 +34,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            transform: rotateY('180deg');
+            transform: rotateY(180deg);
             transition: 1s;
             backface-visibility: hidden;
         }
@@ -45,15 +44,15 @@
             position: absolute;
             top: 0;
             left: 0;
-            transform: rotateY('0deg');
+            transform: rotateY(0deg);
             transition: 1s;
             backface-visibility: hidden;
         }
         .img:hover .front{
-            transform: rotateY('0deg');
+            transform: rotateY(0deg);
         }
         .img:hover .back{
-            transform: rotateY('180deg');
+            transform: rotateY(180deg);
         }
         .card .img .new{
             background: #fc636b;

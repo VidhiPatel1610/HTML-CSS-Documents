@@ -86,25 +86,23 @@
         display: block;
     }
     .happyimg .happyimg1{
-        width: 100%;
-        margin-left: 0;
-        padding: 10px 30px;
+        width: 100%;  
+    }
+    .happyimg .happyimg2{
+        width: 100%;  
     }
     .happyimg .happyimg2 .part1{
         width: 100%;
-        display: inline;
+        /* display: inline; */
     }
     .happyimg .happyimg2 .part1 .p1{
-        width:485px;
-        padding: 10px 30px;
+        width:100%;
     }
     .happyimg .happyimg2 .part1 .p2{
         width: 485px;
-        padding: 10px 30px;
     }
     .happyimg .happyimg2 .part2{
-        width: 485px;
-        padding:10px 30px;
+        width: 100%;
     }
     .hotcake .h11{
         width: 100%;
@@ -123,15 +121,18 @@
     .cupcakecards .part2{
         width: 100%;
     }
-    .baker .bakercards{
-        padding-top: 0px;
+    .baker{
+        padding: 30px;
     }
     .baker .ourbaker{
         width: 100%;
-        padding:50px 30px; 
+        padding-bottom: 30px; 
     }
     .baker .ourbaker .x{
         font-size: 18px;
+    }
+    .baker .bakercards{
+        gap: 5px;
     }
     .baker .bakercards .bc1{
         margin-left: 50px;
@@ -158,6 +159,7 @@
     }
     .blog .blogimg1{
         width: 100%;
+        margin-right: 0;
     }
     .blog .blogimg2{
         width: 100%;
