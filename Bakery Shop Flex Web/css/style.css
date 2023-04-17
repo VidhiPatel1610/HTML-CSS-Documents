@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -627,7 +628,6 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background: #337ab7;
     padding: 0 50px;
 }
 .happyimg .happyimg1{
@@ -1159,7 +1159,6 @@
 .baker .ourbaker{
     /* height: 650px; */
     width: 35%;
-    background: lightblue;
 }
 .baker .ourbaker h1{
     font-family: serif;
@@ -1227,7 +1226,6 @@
     width: 65%;
     display: flex;
     flex-wrap: wrap;
-    background: lightcoral;
     gap: 30px;
 }
 .baker .bakercards .bc1{
@@ -1361,7 +1359,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
-    background: #337ab7;
 }
 .blog .blogimg1{
     height: 500px;
@@ -1553,7 +1550,7 @@
     position: relative;
 }
 .map .contactus{
-    height: 650px;
+    /* height: 650px; */
     width: 500px;
     background: rgba(16, 1, 40, 0.694);
     position: absolute;
