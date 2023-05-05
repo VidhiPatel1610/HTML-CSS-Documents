@@ -176,12 +176,15 @@
     }
     .map{
         height: auto;
+        position: static;
     }
     .map .contactus{
         width: 100%;
-        top: 100%;
-        left: 0;
         background: #333;
+        position: static;
+    }
+    .map .contactus .p1{
+        margin: 30px 30px;
     }
     .footer{
         padding: 20px;

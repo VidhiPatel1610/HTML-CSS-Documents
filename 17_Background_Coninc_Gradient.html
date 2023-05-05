@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body 
+        {background: #000;}
+        .x 
+        {
+            height: 100px;
+            width: 100px;
+            background: gray;
+            float : left;
+            margin:20px;
+            border-radius:50%;
+            background: transparent;
+            border: 3px solid gray;
+        }
+        .y{
+            background:conic-gradient(red,blue,green,yellow);
+        }
+        .z{
+            background: conic-gradient(from -45deg,red,blue,green,yellow);
+        }
+        .a
+        {
+            background: conic-gradient(from -45deg at 30% 20%,red,blue,green,yellow);
+        }
+        .b
+        {
+            background: conic-gradient(from 45deg,red 0deg,red 90deg,blue 90deg,blue 180deg,green 180deg,green 270deg,yellow 270deg,yellow 360deg);
+        }
+        .c
+        {
+            background: repeating-conic-gradient(red 0deg,red 20deg,yellow 20deg,yellow 30deg);
+        }
+        .p
+        {
+            background: repeating-conic-gradient(red 0deg,red 20deg,transparent 20deg,transparent 30deg);
+            background-color: lightblue;   
+        }
+        .q
+        {
+            background: conic-gradient(red 0deg,red 90deg,transparent 90deg,transparent 180deg,green 180deg,green 270deg,transparent 270deg,transparent 360deg);
+
+            border-radius: 0;
+        }
+        .r
+        {
+            background: conic-gradient(red 0deg,red 90deg,blue 90deg,blue 180deg,green 180deg,green 270deg,yellow 270deg,yellow 360deg);
+
+            border-radius: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="x y"></div>
+    <div class="x z"></div>
+    <div class="x a"></div>
+    <div class="x b"></div>
+    <div class="x c"></div>
+    <div class="x p"></div>
+    <div class="x q"></div>
+    <div class="x r"></div>
+</body>
+</html>
