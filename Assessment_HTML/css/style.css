@@ -1,0 +1,361 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    /* height: 700px; */
+    width: 100%;
+    background: url(/images/dream-pulse-header.jpg);
+    background-size: cover;
+    display: flex;
+    position: relative;
+}
+.nav{
+    height: 700px;
+    width: 30%;
+    background: rgba(0, 0, 0,0.3);
+    padding: 0 70px;
+}
+.sidebar{
+    /* height: 900px; */
+    width: 30%;
+    /* background: coral; */
+    padding: 40px 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.borderbox1
+{
+    height: 180px;
+    width: 230px;
+    border: 1px solid white;
+    position: relative;
+    margin-top: 20px;
+}
+.borderbox2
+{
+    height: 180px;
+    width: 230px;
+    border: 1px solid white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding-top: 40px;
+    padding-left: 20px;
+    line-height: 50px;
+}
+.borderbox2 span
+{
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+}
+.list{
+    height: 300px;
+    width: 100%;
+    margin-top: 100px;
+    padding-right: 70px;
+}
+.list .intro{
+    font-size: 20px;
+    color: white;
+    margin: 30px 0;
+    text-align: right;
+    
+}
+.font
+{
+    height: 100px;
+    width: 100%;
+    padding: 20px 0;
+}
+.fa-facebook-f,.fa-twitter,.fa-globe,.fa-linkedin-in{
+    font-size: 25px;
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+    background: white;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.introduction
+{
+    /* height: 700px; */
+    width: 70%;
+}
+.box{
+    height: 450px;
+    width: 500px;
+    background:rgba(255, 255, 255,0.3);
+    margin-top: 100px;
+    margin-left: 380px;
+    padding: 50px;
+    border: 1.5px solid rgb(255, 255, 255);
+}
+.box .head{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: rgb(23, 110, 140);
+    font-size: 25px;
+}
+.box .content,span{
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgb(101, 100, 100);
+    line-height: 35px;
+}
+.text1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    text-align: center;
+}
+.text2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.secondmain{
+    height: 3000px;
+    width: 100%;
+    display: flex;
+}
+.secondmain .sfirst{
+    height: 3000px;
+    width: 30%;
+    background: #424243;
+}
+.secondmain .ssecond{
+    height: 3000px;
+    width: 70%;
+}
+.ssecond .data{
+    height: 900px;
+    width: 100%;
+    
+    display: flex;
+}
+.ssecond .data .aboutus,.profile{
+    height: 900px;
+    width: 50%;
+    /* border: 2px solid; */
+}
+.aboutus,.profile{
+    padding-top: 120px;
+    padding-left: 80px;
+    padding-right: 100px;
+}
+.aboutus .fa-scale-balanced{
+    font-size: 100px;
+    color: #369;
+    margin-bottom: 50px;
+}
+.aboutus .phead{
+    font-size: 30px;
+    color: #369;
+}
+.aboutus .ptext1,.ptext2{
+    font-size: 20px;
+    color: #707172;
+    margin: 50px 0;
+    line-height: 40px;
+}
+.profile .fa-building{
+    font-size: 100px;
+    color: #369;
+    margin-bottom: 50px;
+}
+.profile .phead{
+    font-size: 30px;
+    color: #369;
+}
+.profile .ptext1,.ptext2{
+    font-size: 20px;
+    color: #707172;
+    margin: 50px 0;
+    line-height: 40px;
+}
+.ssecond .thirdmain{
+    height: 700px;
+    width: 100%;
+    padding: 50px;
+}
+.thirdmain .borderbox1
+{
+    height:550px;
+    width: 100%;
+    border: 1px solid #707172;
+    position: relative;
+    margin-top: 20px;
+}
+.thirdmain .borderbox2
+{
+    height:550px;
+    width: 100%;
+    border: 1px solid #707172;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding-top: 50px;
+    padding-left: 50px;
+    line-height: 50px;
+}
+.thirdmain .ourwork
+{
+    font-size: 30px;
+    color: #369;
+}
+.thirdmain .images{
+    height: 350px;
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+}
+.thirdmain .images .img1{
+    height: 350px;
+    width: 30%;
+    background: url(../images/dog.jpg);
+    margin-right: 20px;
+}
+.thirdmain .images .img2{
+    height: 350px;
+    width: 30%;
+    margin-right: 20px;
+    background: url(../images/women.jpg);
+}
+.thirdmain .images .img3{
+    height: 350px;
+    width: 30%;
+    background: url(../images/flower.jpg);
+}
+.ssecond .ourclient
+{
+    height: 250px;
+    width: 100%;
+    padding-left: 80px;
+}
+.ssecond .ourclient .firsttext{
+    font-size: 30px;
+    color: #369;
+}
+.ssecond .ourclient .secondtext{
+    font-size: 18px;
+    color: #707172;
+    line-height: 35px;
+    margin-right: 250px;
+    margin-top: 30px;
+}
+.ssecond .listimages1{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    padding-left: 80px;
+}
+.ssecond .listimages1 .i1,.i2,.i3,.i4{
+    height: 120px;
+    width: 22%;
+    border: 1px solid #b4b6b8;
+    margin-right: 20px;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+.ssecond .listimages2{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    padding-left: 80px;
+    margin-top: 20px;
+}
+.ssecond .listimages2 .li1,.li2,.li3,.li4{
+    height: 100px;
+    width: 22%;
+    border: 1px solid #b4b6b8;
+    margin-right: 20px;
+    padding: 30px 10px;
+    border-radius: 5px;
+}
+.ssecond .footer{
+    height: 900px;
+    width: 100%;
+    display: flex;
+}
+.ssecond .footer .part1{
+    height: 900px;
+    width: 50%;
+    padding-left: 70px;
+    padding-top: 100px;
+}
+.ssecond .footer .part2{
+    height: 900px;
+    width: 50%;
+    padding-top: 150px;
+    padding-left: 80px;
+}
+.ssecond .footer .part1 .borderbox1
+{
+    height: 500px;
+    width: 400px;
+    border: 1px solid #c1c1c9;
+    position: relative;
+    margin-top: 20px;
+}
+.ssecond .footer .part1 .borderbox2
+{
+    height: 500px;
+    width: 400px;
+    border: 1px solid #c1c1c9;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding-top: 40px;
+    padding-left: 50px;
+    line-height: 50px;
+    padding-right: 50px;
+}
+.ssecond .footer .part1 .borderbox2 p
+{
+    font-size: 30px;
+    color: #369;
+}
+.ssecond .footer .part1 .borderbox2 .div1,.div2
+{
+    font-size: 20px;
+    color: #707172;
+    margin: 20px 0;
+    line-height: 40px;
+}
+.part2 input{
+    height: 30px;
+    width:300px;
+    display: block;
+    border: none;
+    border-bottom:1px solid #c1c1c9;
+    font-size: 16px;
+    margin: 50px 0;
+}
+.part2 textarea{
+    display: block;
+    border: none;
+    border-bottom:1px solid #c1c1c9;
+    font-size: 16px;
+    margin: 50px 0;
+}
+.part2 button
+{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #c1c1c9;
+    margin-left: 200px;
+    background: white;
+}
