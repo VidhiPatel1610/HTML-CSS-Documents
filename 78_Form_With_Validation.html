@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Name:<input type="text" required  placeholder="Enter Name" pattern="[a-zA-Z]{3,10}" title="min 3 and max 10"><br><br>
+        Email:<input type="email" required  placeholder="Enter Email" pattern="[a-zA-Z0-9.]+@[a-zA-Z0-9-]+.[co]+.[in]$" ><br><br>
+        Password:<input type="password" placeholder="Enter Password" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{3,10}$"><br><br>
+        Address:<textarea cols="50" placeholder="Enter Address"></textarea><br><br>
+        DOB:<input type="Date"><br><br>
+        Country:
+        <select>
+            <option>India</option>
+            <option>China</option>
+            <option>Japan</option>
+            <option>America</option>
+            <option>UK</option>
+        </select><br><br>
+        Gender:
+        <input type="radio" value="Male" name="gen" checked>Male
+        <input type="radio" value="Female" name="gen">Female
+        <input type="radio" value="Other" name="gen">Other<br><br>
+        Language:
+            <input type="checkbox" checked>English</label>
+            <input type="checkbox">Gujarati</label>
+            <input type="checkbox">Hindi</label><br><br>
+        File:
+        <input type="file"><br><br>
+        Images:
+        <input type="image" src="https://img.freepik.com/premium-photo/bright-green-meadow-with-grass_124507-13850.jpg" width="100px" height="100px"><br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

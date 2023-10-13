@@ -7,7 +7,7 @@
 .main{
     /* height: 700px; */
     width: 100%;
-    background: url(/images/dream-pulse-header.jpg);
+    background: url("https://themewagon.github.io/dream-pulse/img/dream-pulse-header.jpg");
     background-size: cover;
     display: flex;
     position: relative;
